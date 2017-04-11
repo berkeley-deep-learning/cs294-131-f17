@@ -43,7 +43,7 @@ To get announcements about information about the class including guest speakers,
       <td>TBA</td>
       <td>TBA</td>
       <td>TBA</td>
-      <td>TBA/td>
+      <td>TBA</td>
       <td></td>
     </tr>
   </tbody>
