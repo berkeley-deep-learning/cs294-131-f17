@@ -21,7 +21,7 @@
 ## Teaching Assistants
 <div class="instructor">
   <a href="https://people.eecs.berkeley.edu/~lisa_anne/">
-  <div class="instructorphoto"><img src="trevordarrell.jpg"></div>
+  <div class="instructorphoto"><img src="lisaannehendricksA.jpg"></div>
   <div>Lisa Anne Hendricks</div>
   </a>
 </div>
