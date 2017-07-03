@@ -18,6 +18,14 @@
   </a>
 </div>
 
+## Teaching Assistants
+<div class="instructor">
+  <a href="https://people.eecs.berkeley.edu/~lisa_anne/">
+  <div class="instructorphoto"><img src="trevordarrell.jpg"></div>
+  <div>Lisa Anne Hendricks</div>
+  </a>
+</div>
+
 ## Lectures
 **Time**: Monday 1--2:30 pm
 
