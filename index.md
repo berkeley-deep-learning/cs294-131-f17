@@ -26,6 +26,10 @@
   </a>
 </div>
 
+## Office Hours
+
+Lisa Anne: TBA
+
 ## Lectures
 **Time**: Monday 1--2:30 pm
 
