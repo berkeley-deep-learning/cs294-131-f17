@@ -1,4 +1,4 @@
-## Instructors
+## Title
 <div class="instructor">
   <a href="https://people.eecs.berkeley.edu/~trevor/">
   <div class="instructorphoto"><img src="trevordarrell.jpg"></div>
