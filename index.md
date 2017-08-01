@@ -6,12 +6,6 @@
   </a>
 </div>
 <div class="instructor">
-  <a href="https://people.eecs.berkeley.edu/~svlevine/">
-  <div class="instructorphoto"><img src="sergeylevine.jpg"></div>
-  <div>Sergey Levine</div>
-  </a>
-</div>
-<div class="instructor">
   <a href="https://people.eecs.berkeley.edu/~dawnsong/">
   <div class="instructorphoto"><img src="dawnsong.jpg"></div>
   <div>Dawn Song</div>
