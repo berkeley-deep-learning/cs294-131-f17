@@ -46,8 +46,91 @@ To get announcements about information about the class including guest speakers,
   </thead>
   <tbody>
     <tr>
+      <td>08/28</td>
+      <td>Anima Anandkumar</td>
       <td>TBA</td>
       <td>TBA</td>
+      <td></td>
+    </tr>
+      <td>09/11</td>
+      <td>Vladlen Koltun</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    </tr>
+      <td>09/18</td>
+      <td>Jianfeng Gao</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    </tr>
+      <td>09/25</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    </tr>
+      <td>10/02</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    </tr>
+      <td>10/09</td>
+      <td>Igor Mordatch</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    </tr>
+      <td>10/16</td>
+      <td>David Patterson</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    </tr>
+      <td>10/23</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    </tr>
+      <td>10/30</td>
+      <td>Percy Liang</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    </tr>
+      <td>11/06</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    </tr>
+      <td>11/13</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    </tr>
+      <td>11/20</td>
+      <td>Rishabh Singh</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    </tr>
+      <td>11/27</td>
+      <td>Danny Tarlow</td>
       <td>TBA</td>
       <td>TBA</td>
       <td></td>
