@@ -136,6 +136,13 @@ To get announcements about information about the class including guest speakers,
       <td>TBA</td>
       <td></td>
     </tr>
+    <tr>
+      <td>12/01</td>
+      <td>Poster Session</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
 
