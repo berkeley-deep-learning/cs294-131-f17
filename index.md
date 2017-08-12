@@ -22,7 +22,7 @@
 
 ## Office Hours
 
-Lisa Anne: TBA
+Lisa Anne: Monday 5--6:00 pm
 
 ## Lectures
 **Time**: Monday 1--2:30 pm
