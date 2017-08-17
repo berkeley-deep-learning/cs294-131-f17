@@ -68,14 +68,14 @@ To get announcements about information about the class including guest speakers,
     </tr>
     <tr>
       <td>09/25</td>
-      <td>TBA</td>
+      <td>Quoc Le and Barret Zoph</td>
       <td>TBA</td>
       <td>TBA</td>
       <td></td>
     </tr>
     <tr>
       <td>10/02</td>
-      <td>TBA</td>
+      <td>Ross Girshik</td>
       <td>TBA</td>
       <td>TBA</td>
       <td></td>
@@ -96,7 +96,7 @@ To get announcements about information about the class including guest speakers,
     </tr>
     <tr>
       <td>10/23</td>
-      <td>TBA</td>
+      <td>Matthew Johnson</td>
       <td>TBA</td>
       <td>TBA</td>
       <td></td>
@@ -117,7 +117,7 @@ To get announcements about information about the class including guest speakers,
     </tr>
     <tr>
       <td>11/13</td>
-      <td>TBA</td>
+      <td>Rob Fergus</td>
       <td>TBA</td>
       <td>TBA</td>
       <td></td>
