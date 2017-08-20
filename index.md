@@ -52,31 +52,19 @@ To get announcements about information about the class including guest speakers,
       Main Readings:
       <ul>
       <li><a href="https://arxiv.org/abs/1707.08308">Tensor Regression Networks</a> by Jean Kossaifi, Zachary Lipton, Aran Khanna, Tommaso Furlanello and Anima Anandkumar</li>
-      <li><a href="https://arxiv.org/pdf/1606.05696.pdf">Tensor Contractions with Extended BLAS Kernels on CPU and GPU</a> by Yang Shi, U.N. Niranjan, Anima Anandkumar, Cris Cecka</li>.  Also see a <a href="https://devblogs.nvidia.com/parallelforall/cublas-strided-batched-matrix-multiply/">blog post</a> and <a href=http://newport.eecs.uci.edu/anandkumar/pubs/tensorcontraction_poster.pdf>poster</a>
+      <li><a href="https://arxiv.org/pdf/1606.05696.pdf">Tensor Contractions with Extended BLAS Kernels on CPU and GPU</a> by Yang Shi, U.N. Niranjan, Anima Anandkumar, Cris Cecka.  Also see a <a href="https://devblogs.nvidia.com/parallelforall/cublas-strided-batched-matrix-multiply/">blog post</a> and <a href=http://newport.eecs.uci.edu/anandkumar/pubs/tensorcontraction_poster.pdf>poster</a>.</li>
       </ul>
-
-
- 
-Background reading:
- 
-"Tensor Decompositions for Learning Latent Variable Models"
-By A. Anandkumar, R. Ge, D. Hsu, S.M. Kakade and M. Telgarsky. Journal of Machine Learning Research 15 (2014) 2773-2832.
-Shorter blog post for initial reading: http://www.offconvex.org/2015/12/17/tensor-decompositions/
- 
-Fast and Guaranteed Tensor Decomposition via Sketching"
-By Yining Wang, Hsiao-Yu Tung, Alex Smola, Anima Anandkumar. NIPS 2015
-Poster: http://newport.eecs.uci.edu/anandkumar/pubs/poster_fftlda.pdf
- 
-Jupyter notebooks (credits will be provided on AWS to run them):
- 
-Tensors on tensorly package (with mxnet backend)
-https://github.com/JeanKossaifi/tensorly_notebooks/
- 
-Gluon tutorials for deep learning
-http://thestraightdope.mxnet.io/
- 
-Visual question & answering using sketches
-https://github.com/shiyangdaisy23/vqa-mxnet-gluon/blob/master/VQA-gluon.ipynb</td>
+      Background reading:
+      <ul>
+      <li><a href=https://arxiv.org/pdf/1210.7559.pdf>Tensor Decompositions for Learning Latent Variable Models</a> by A. Anandkumar, R. Ge, D. Hsu, S.M. Kakade and M. Telgarsky. Also see a <a href=http://www.offconvex.org/2015/12/17/tensor-decompositions>blog post</a>. </li>
+       <li><a href=https://arxiv.org/pdf/1506.04448.pdf>Fast and Guaranteed Tensor Decomposition via Sketching</a> by A. Anandkumar, R. Ge, D. Hsu, S.M. Kakade and M. Telgarsky. Also see a <a href=http://newport.eecs.uci.edu/anandkumar/pubs/poster_fftlda.pdf>poster</a>. </li>
+       </ul>
+       Jupyter notebooks (credits will be provided on AWS to run them):
+       <ul>
+       <li> Tensors on tensorly package (with mxnet backend): https://github.com/JeanKossaifi/tensorly_notebooks/ </li>
+       <li> Gluon tutorials for deep learning: http://thestraightdope.mxnet.io/ </li>
+       <li> Visual question & answering using sketches: https://github.com/shiyangdaisy23/vqa-mxnet-gluon/blob/master/VQA-gluon.ipynb </li>
+       </td>
       <td>TBA</td>
       <td></td>
     </tr>
