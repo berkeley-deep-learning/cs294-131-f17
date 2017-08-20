@@ -50,7 +50,7 @@ To get announcements about information about the class including guest speakers,
       <td>Anima Anandkumar</td>
       <td>
       Main Readings:
-      * <a href="https://arxiv.org/abs/1707.08308">Tensor Regression Networks</a> byJean Kossaifi, Zachary Lipton, Aran Khanna, Tommaso Furlanello and Anima Anandkumar
+      *<a href="https://arxiv.org/abs/1707.08308">Tensor Regression Networks</a> byJean Kossaifi, Zachary Lipton, Aran Khanna, Tommaso Furlanello and Anima Anandkumar
 On Arxiv.
  
 "Tensor Contractions with Extended BLAS Kernels on CPU and GPU"
