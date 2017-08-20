@@ -48,7 +48,10 @@ To get announcements about information about the class including guest speakers,
     <tr>
       <td>08/28</td>
       <td>Anima Anandkumar</td>
-      <td>“Tensor Regression Networks"
+      <td>
+      <a href="https://arxiv.org/abs/1707.08308">Tensor Regression Networks</a>
+
+      “Tensor Regression Networks"
 By Jean Kossaifi, Zachary Lipton, Aran Khanna, Tommaso Furlanello and Anima Anandkumar
 On Arxiv.
  
