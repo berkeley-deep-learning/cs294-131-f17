@@ -52,7 +52,7 @@ To get announcements about information about the class including guest speakers,
       Main Readings:
       <ul>
       <li><a href="https://arxiv.org/abs/1707.08308">Tensor Regression Networks</a> by Jean Kossaifi, Zachary Lipton, Aran Khanna, Tommaso Furlanello and Anima Anandkumar</li>
-      <li><a href="https://arxiv.org/pdf/1606.05696.pdf">Tensor Contractions with Extended BLAS Kernels on CPU and GPU</a> by Yang Shi, U.N. Niranjan, Anima Anandkumar, Cris Cecka.  Also see a <a href="https://devblogs.nvidia.com/parallelforall/cublas-strided-batched-matrix-multiply/">blog post</a> and <a href=http://newport.eecs.uci.edu/anandkumar/pubs/tensorcontraction_poster.pdf>poster</a>.</li>
+      <li><a href="https://arxiv.org/pdf/1606.05696.pdf">Tensor Contractions with Extended BLAS Kernels on CPU and GPU</a> by Yang Shi, U.N. Niranjan, Anima Anandkumar, Cris Cecka.  Also see a <a href="https://devblogs.nvidia.com/parallelforall/cublas-strided-batched-matrix-multiply/">blog post</a> and <a href="http://newport.eecs.uci.edu/anandkumar/pubs/tensorcontraction_poster.pdf">poster</a>.</li>
       </ul>
       Background reading:
       <ul>
