@@ -57,7 +57,7 @@ To get announcements about information about the class including guest speakers,
       Background reading:
       <ul>
       <li><a href="https://arxiv.org/pdf/1210.7559.pdf>Tensor Decompositions for Learning Latent Variable Models"</a> by A. Anandkumar, R. Ge, D. Hsu, S.M. Kakade and M. Telgarsky. Also see a <a href="http://www.offconvex.org/2015/12/17/tensor-decompositions>blog post"</a>. </li>
-       <li><a href="https://arxiv.org/pdf/1506.04448.pdf">Fast and Guaranteed Tensor Decomposition via Sketching</a> by A. Anandkumar, R. Ge, D. Hsu, S.M. Kakade and M. Telgarsky. Also see a <a href="http://newport.eecs.uci.edu/anandkumar/pubs/poster_fftlda.pdf>poster"</a>. </li>
+       <li><a href="https://arxiv.org/pdf/1506.04448.pdf">Fast and Guaranteed Tensor Decomposition via Sketching</a> by A. Anandkumar, R. Ge, D. Hsu, S.M. Kakade and M. Telgarsky. Also see a <a href="http://newport.eecs.uci.edu/anandkumar/pubs/poster_fftlda.pdf">poster</a>. </li>
        </ul>
        Jupyter notebooks (credits will be provided on AWS to run them):
        <ul>
