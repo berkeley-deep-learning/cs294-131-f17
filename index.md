@@ -70,6 +70,13 @@ To get announcements about information about the class including guest speakers,
       <td></td>
     </tr>
     <tr>
+      <td>09/05</td>
+      <td>Labor Day - No Class</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
       <td>09/11</td>
       <td>Vladlen Koltun</td>
       <td>TBA</td>
