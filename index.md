@@ -48,7 +48,36 @@ To get announcements about information about the class including guest speakers,
     <tr>
       <td>08/28</td>
       <td>Anima Anandkumar</td>
-      <td>TBA</td>
+      <td>“Tensor Regression Networks"
+By Jean Kossaifi, Zachary Lipton, Aran Khanna, Tommaso Furlanello and Anima Anandkumar
+On Arxiv.
+ 
+"Tensor Contractions with Extended BLAS Kernels on CPU and GPU"
+By Yang Shi, U.N. Niranjan, Anima Anandkumar, Cris Cecka 
+in HiPC2016, Hyderabad, India, December 2016
+Shorter blog post for initial reading:  https://devblogs.nvidia.com/parallelforall/cublas-strided-batched-matrix-multiply/
+Poster: http://newport.eecs.uci.edu/anandkumar/pubs/tensorcontraction_poster.pdf
+ 
+Background reading:
+ 
+"Tensor Decompositions for Learning Latent Variable Models"
+By A. Anandkumar, R. Ge, D. Hsu, S.M. Kakade and M. Telgarsky. Journal of Machine Learning Research 15 (2014) 2773-2832.
+Shorter blog post for initial reading: http://www.offconvex.org/2015/12/17/tensor-decompositions/
+ 
+Fast and Guaranteed Tensor Decomposition via Sketching"
+By Yining Wang, Hsiao-Yu Tung, Alex Smola, Anima Anandkumar. NIPS 2015
+Poster: http://newport.eecs.uci.edu/anandkumar/pubs/poster_fftlda.pdf
+ 
+Jupyter notebooks (credits will be provided on AWS to run them):
+ 
+Tensors on tensorly package (with mxnet backend)
+https://github.com/JeanKossaifi/tensorly_notebooks/
+ 
+Gluon tutorials for deep learning
+http://thestraightdope.mxnet.io/
+ 
+Visual question & answering using sketches
+https://github.com/shiyangdaisy23/vqa-mxnet-gluon/blob/master/VQA-gluon.ipynb</td>
       <td>TBA</td>
       <td></td>
     </tr>
