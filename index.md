@@ -65,7 +65,7 @@ To get announcements about information about the class including guest speakers,
        <li> Gluon tutorials for deep learning: http://thestraightdope.mxnet.io/ </li>
        <li> Visual question & answering using sketches: https://github.com/shiyangdaisy23/vqa-mxnet-gluon/blob/master/VQA-gluon.ipynb </li>
        </td>
-      <td>TBA</td>
+      <td><a href="speakers.html#anima-anandkumar-role-of-tensors-in-machine-learning">Role of Tensors in Machine Learning</a></td>
       <td></td>
     </tr>
     <tr>
