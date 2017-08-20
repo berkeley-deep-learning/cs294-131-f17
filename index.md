@@ -61,7 +61,7 @@ To get announcements about information about the class including guest speakers,
        </ul>
        Jupyter notebooks (credits will be provided on AWS to run them):
        <ul>
-       <li> <a href="https://github.com/JeanKossaifi/tensorly_notebooks/">Tensors on tensorly package (with mxnet backend): </a></li>
+       <li> <a href="https://github.com/JeanKossaifi/tensorly_notebooks/">Tensors on tensorly package (with mxnet backend) </a></li>
        <li> <a href="http://thestraightdope.mxnet.io/">Gluon tutorials for deep learning</a> </li>
        <li> <a href="https://github.com/shiyangdaisy23/vqa-mxnet-gluon/blob/master/VQA-gluon.ipynb">Visual question & answering using sketches</a></li>
        </ul>
