@@ -99,7 +99,7 @@ Spoken Dialog Systems:
 A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       </ul>
       </td>
-      <td>TBA</td>
+      <td><a href="peakers.html#jianfeng-gao-neural-appraches-to-machine-reading-comprehension-and-dialogue">Neural approaches to Machine Reading Comprehension and Dialogue</a></td>
       <td></td>
     </tr>
     <tr>
