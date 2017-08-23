@@ -54,7 +54,7 @@ To get announcements about information about the class including guest speakers,
       <li><a href="https://arxiv.org/abs/1707.08308">Tensor Regression Networks</a> by Jean Kossaifi, Zachary Lipton, Aran Khanna, Tommaso Furlanello and Anima Anandkumar</li>
       <li><a href="https://arxiv.org/pdf/1606.05696.pdf">Tensor Contractions with Extended BLAS Kernels on CPU and GPU</a> by Yang Shi, U.N. Niranjan, Anima Anandkumar, Cris Cecka.  Also see a <a href="https://devblogs.nvidia.com/parallelforall/cublas-strided-batched-matrix-multiply/">blog post</a> and <a href="http://newport.eecs.uci.edu/anandkumar/pubs/tensorcontraction_poster.pdf">poster</a>.</li>
       </ul>
-      Background reading:
+      Background Reading:
       <ul>
       <li><a href="https://arxiv.org/pdf/1210.7559.pdf">Tensor Decompositions for Learning Latent Variable Models</a> by A. Anandkumar, R. Ge, D. Hsu, S.M. Kakade and M. Telgarsky. Also see a <a href="http://www.offconvex.org/2015/12/17/tensor-decompositions">blog post</a>. </li>
        <li><a href="https://arxiv.org/pdf/1506.04448.pdf">Fast and Guaranteed Tensor Decomposition via Sketching</a> by A. Anandkumar, R. Ge, D. Hsu, S.M. Kakade and M. Telgarsky. Also see a <a href="http://newport.eecs.uci.edu/anandkumar/pubs/poster_fftlda.pdf">poster</a>. </li>
@@ -86,7 +86,19 @@ To get announcements about information about the class including guest speakers,
     <tr>
       <td>09/18</td>
       <td>Jianfeng Gao</td>
-      <td>TBA</td>
+      <td>Main Readings:
+      <ul>
+      <li><a href="https://arxiv.org/pdf/1609.05284.pdf">ReasoNet: Learning to Stop Reading in Machine Comprehension</a> by Y. Shen, P. Huang, J. Gao, and W. Chen</li>
+      <li><a href="https://arxiv.org/abs/1609.00777">Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access</a> by B. Dhingra, L.Li, X. Li, J. Gao, Y.Chen, F. Ahmed, and L. Deng</li>
+      </ul>
+      Background Reading:
+      <ul>
+      <li><a href="https://arxiv.org/pdf/1606.05250.pdf">SQuAD: 100,000+ Questions for Machine Comprehension of Text</a> by P. Rajpurkar, J. Zhang, K. Lopyrev, and P. Liang</li>
+      <li><a href="http://cs.brown.edu/courses/csci2951-k/papers/young13.pdf">POMDP-Based Statistical
+Spoken Dialog Systems:
+A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
+      </ul>
+      </td>
       <td>TBA</td>
       <td></td>
     </tr>
