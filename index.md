@@ -66,7 +66,7 @@ To get announcements about information about the class including guest speakers,
        <li> <a href="https://github.com/shiyangdaisy23/vqa-mxnet-gluon/blob/master/VQA-gluon.ipynb">Visual question & answering using sketches</a></li>
        </ul>
        </td>
-      <td><a href="speakers.html#anima-anandkumar-role-of-tensors-in-machine-learning">Role of Tensors in Machine Learning</a></td>
+      <td><a href="speakers.html#anima-anandkumar-role-of-tensors-in-machine-learning">Role of Tensors in Machine Learning</a>       </td>
       <td></td>
     </tr>
     <tr>
@@ -75,9 +75,7 @@ To get announcements about information about the class including guest speakers,
       <td></td>
       <td></td>
       <td></td>
-    </tr>
-    
-    
+    </tr>    
     <tr>
       <td>09/18</td>
       <td>Jianfeng Gao</td>
@@ -97,6 +95,7 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <td><a href="speakers.html#jianfeng-gao-neural-appraches-to-machine-reading-comprehension-and-dialogue">Neural approaches to Machine Reading Comprehension and Dialogue</a></td>
       <td></td>
     </tr>
+    
     <tr>
       <td>09/25</td>
       <td>Quoc Le and Barret Zoph</td>
