@@ -95,7 +95,6 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <td><a href="speakers.html#jianfeng-gao-neural-appraches-to-machine-reading-comprehension-and-dialogue">Neural approaches to Machine Reading Comprehension and Dialogue</a></td>
       <td></td>
     </tr>
-    
     <tr>
       <td>09/25</td>
       <td>Quoc Le and Barret Zoph</td>
