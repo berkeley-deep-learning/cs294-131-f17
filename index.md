@@ -88,11 +88,11 @@ To get announcements about information about the class including guest speakers,
       </ul>
       Background Readings:
       <ul>
-      <li><a href="https://papers.cnl.salk.edu/PDFs/A%20Critique%20of%20Pure%20Vision%201994-2933.pdf">A Critique of Pure Vision by P. Churchland, V.S. Ramachandran and T. Sejnowski </li>
+      <li><a href="https://papers.cnl.salk.edu/PDFs/A%20Critique%20of%20Pure%20Vision%201994-2933.pdf">A Critique of Pure Vision</a> by P. Churchland, V.S. Ramachandran and T. Sejnowski </li>
       </ul>
     </td>
 
-      <td>speakers.html#vladlent-koltun-learning-to-act-with-natural-supervision</td>
+      <td><a href="speakers.html#vladlent-koltun-learning-to-act-with-natural-supervision">Learning to Act with Natural Supervision</a></td>
     </tr>
     <tr>
       <td>09/18</td>
