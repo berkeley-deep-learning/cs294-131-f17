@@ -78,8 +78,7 @@ To get announcements about information about the class including guest speakers,
     </tr>
     <tr>
       <td>09/11</td>
-      <td>Vladlen Koltun</td>
-      <td>Learning to Act with Natural Supervision</td>
+      <td>Vladlen Koltun</td>      
       <td>
       Main Reaings:
       <ul>
@@ -90,10 +89,12 @@ To get announcements about information about the class including guest speakers,
       <ul>
       <li><a href="https://papers.cnl.salk.edu/PDFs/A%20Critique%20of%20Pure%20Vision%201994-2933.pdf">A Critique of Pure Vision</a> by P. Churchland, V.S. Ramachandran and T. Sejnowski </li>
       </ul>
-    </td>
-
-      <td><a href="speakers.html#vladlent-koltun-learning-to-act-with-natural-supervision">Learning to Act with Natural Supervision</a></td>
+      </td>
+      
+      <td><a href="speakers.html#vladlent-koltun-learning-to-act-with-natural-supervision">Learning to Act with Natural Supervision</a>
+      </td>
     </tr>
+    
     <tr>
       <td>09/18</td>
       <td>Jianfeng Gao</td>
