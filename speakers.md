@@ -17,3 +17,14 @@ In this talk, I start with a brief introduction to the history of symbolic appro
 ### Bio
 
 Jianfeng Gao is Partner Research Manager at Microsoft AI and Research, Redmond. He works on deep learning for text and image processing and leads the development of AI systems for machine reading comprehension (MRC), question answering (QA), dialogue, and business applications. From 2006 to 2014, he was Principal Researcher at Natural Language Processing Group at Microsoft Research, Redmond, where he worked on Web search, query understanding and reformulation, ads prediction, and statistical machine translation. From 2005 to 2006, he was a Research Lead in Natural Interactive Services Division at Microsoft, where he worked on Project X, an effort of developing natural user interface for Windows. From 2000 to 2005, he was Research Lead in Natural Language Computing Group at Microsoft Research Asia, where he and his colleagues developed the first Chinese speech recognition system released with Microsoft Office, the Chinese/Japanese Input Method Editors (IME) which were the leading products in the market, and the natural language platform for Microsoft Windows.
+
+## Vladlen Koltun: Learning to Act with Natural Supervision
+
+### Abstract
+
+I will begin by discussing the common organization of machine learning into supervised, unsupervised, and reinforcement learning. I will argue that these distinctions have largely outlived their usefulness, in part because the terms are heavily overloaded and mean different things to different people (or even the same people at different times of day). I will discuss natural supervision as a regime that supports robust algorithmic machinery, scalable datasets, and the coupling of perception and action. This will be illustrated via recent work that uses natural supervision to train intelligent systems that act in complex and dynamic three-dimensional environments based on raw sensory input.
+
+### Bio
+
+Vladlen Koltun is the Director of the Intel Visual Computing Lab. He received a PhD in 2002 for new results in theoretical computational geometry, spent three years at UC Berkeley as a postdoc in the theory group, and joined the Stanford Computer Science faculty in 2005 as a theoretician. He switched to research in visual computing in 2007 and joined Intel as a Principal Researcher in 2015 to establish the Visual Computing Lab.
+
