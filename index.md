@@ -22,7 +22,7 @@
 
 ## Office Hours
 
-Lisa Anne: Monday 5--6:00 pm
+Lisa Anne: Monday 5--6:00 pm, Soda-Alcove-283H
 
 ## Lectures
 **Time**: Monday 1--2:30 pm
