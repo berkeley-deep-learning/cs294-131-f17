@@ -79,8 +79,8 @@ To get announcements about information about the class including guest speakers,
     <tr>
       <td>09/11</td>
       <td>Vladlen Koltun</td>
-      <td>TBA</td>
-      <td>TBA</td>
+      <td>Learning to Act with Natural Supervision</td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
