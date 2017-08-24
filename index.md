@@ -80,8 +80,19 @@ To get announcements about information about the class including guest speakers,
       <td>09/11</td>
       <td>Vladlen Koltun</td>
       <td>Learning to Act with Natural Supervision</td>
-      <td></td>
-      <td></td>
+      <td>
+      Main Reaings:
+      <ul>
+      <li><a href="http://vladlen.info/publications/learning-act-predicting-future/
+      ">Learning to Act by Predicting the Future</a> by A. Dosovitskiy  and V. Koltun</li>
+      </ul>
+      Background Readings:
+      <ul>
+      <li><a href="https://papers.cnl.salk.edu/PDFs/A%20Critique%20of%20Pure%20Vision%201994-2933.pdf">A Critique of Pure Vision by P. Churchland, V.S. Ramachandran and T. Sejnowski </li>
+      </ul>
+    </td>
+
+      <td>speakers.html#vladlent-koltun-learning-to-act-with-natural-supervision</td>
     </tr>
     <tr>
       <td>09/18</td>
