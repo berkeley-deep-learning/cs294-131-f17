@@ -72,7 +72,12 @@ To get announcements about information about the class including guest speakers,
     <tr>
       <td>09/05</td>
       <td>Labor Day - No Class</td>
-      <td></td>
+      <td>
+      Main Readings:
+      <ul>
+      <li><a href="http://vladlen.info/publications/learning-act-predicting-future/">Learning to Act by Predicting the Future</a></li>
+      </ul>
+      </td>
       <td></td>
       <td></td>
     </tr>    
