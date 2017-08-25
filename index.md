@@ -73,10 +73,6 @@ To get announcements about information about the class including guest speakers,
       <td>09/05</td>
       <td>Labor Day - No Class</td>
       <td>
-      Main Readings:
-      <ul>
-      <li><a href="http://vladlen.info/publications/learning-act-predicting-future/">Learning to Act by Predicting the Future</a></li>
-      </ul>
       </td>
       <td></td>
       <td></td>
@@ -84,7 +80,18 @@ To get announcements about information about the class including guest speakers,
     <tr>
       <td>09/11</td>
       <td>Vladlen Koltun</td>
-      <td></td>
+      <td>
+      Main Readings:
+      <ul>
+      <li><a href="http://vladlen.info/publications/learning-act-predicting-future/">Learning to Act by Predicting the Future</a> by A. Dosovitskiy and V. Koltun</li>
+      </ul>
+      Background Reading:
+      <ul>
+      <li>
+      <a href="https://papers.cnl.salk.edu/PDFs/A%20Critique%20of%20Pure%20Vision%201994-2933.pdf">A Critique of Pure Vision</a> by P. Churchland, V.S. Ramachandran, and T. Sejnowski.
+      </li>
+      </ul>
+      </td>
       <td></td>
       <td></td>
     </tr>  
