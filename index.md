@@ -92,7 +92,7 @@ To get announcements about information about the class including guest speakers,
       </li>
       </ul>
       </td>
-      <td></td>
+      <td><a href="speakers.html#vladlen-koltun-learning-to-act-with-natural-supervision">Learning to Act with Natural Supervision</a> </td>
       <td></td>
     </tr>  
     <tr>
