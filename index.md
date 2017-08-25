@@ -77,6 +77,13 @@ To get announcements about information about the class including guest speakers,
       <td></td>
     </tr>    
     <tr>
+      <td>09/11</td>
+      <td>Vladlen Koltun</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>  
+    <tr>
       <td>09/18</td>
       <td>Jianfeng Gao</td>
       <td>Main Readings:
