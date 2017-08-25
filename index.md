@@ -210,6 +210,7 @@ Students may enroll in this class for variable units.
 * 1 unit: Participate in reading assignments (including serving as discussion lead).
 * 2 units: Complete a project.
 * 3 units: Both reading assignments and a project.
+* You **may not** take this class for 4 units.
 
 ## Deadlines
 * Reading assignment deadlines:
