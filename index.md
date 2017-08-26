@@ -112,7 +112,7 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       </ul>
       </td>
       <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#jianfeng-gao-neural-appraches-to-machine-reading-comprehension-and-dialogue">Neural approaches to Machine Reading Comprehension and Dialogue</a></td>
-      <td></td>
+      <td>Project Proposal Due</td>
     </tr>
     <tr>
       <td>09/25</td>
@@ -154,7 +154,7 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <td>Percy Liang</td>
       <td>TBA</td>
       <td>TBA</td>
-      <td></td>
+      <td>Project Milestone Due</td>
     </tr>
     <tr>
       <td>11/06</td>
@@ -191,6 +191,13 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <td>12/09</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Final Report Due</td>
+    </tr>
   </tbody>
 </table>
 
@@ -208,7 +215,11 @@ Students will also form project groups (two to three people per group) and compl
 Students may enroll in this class for variable units.
 
 * 1 unit: Participate in reading assignments (including serving as discussion lead).
-* 2 units: Complete a project.
+* 2 units: Complete a project.  Projects may fall into one of four categories:
+  * Traditional Literature Review of a deep learning topic (e.g., literature review of deep dialogue systems)
+  * Distill-like Literature Review of a deep learning topic (e.g., a Distill-like blog post illustrating different optimization techniques used in deep learning)
+  * Reimplement research code and open source it
+  * Conference level research project
 * 3 units: Both reading assignments and a project.
 * You **may not** take this class for 4 units.
 
@@ -221,12 +232,18 @@ Students may enroll in this class for variable units.
     * Send form to collect questions from students by Wednesday 11:59 pm
     * Summarize questions proposed by students to form the poll and send it by Friday 11:59 pm
     * Summarize the poll to generate a ranked & categorized discussion question list and send the list to teaching staff by Sunday 7pm
+ * Arxiv leads (new this semester!),
+    * Throughout the week discuss papers which have appeared on Arxiv during the week (papers which appear Sunday-Thursday night before the Monday class) on Piazza.  All Arxiv leads are expected to be involved in the Piazza discussion.  Other students may participate as well, but they are not required to.
+    * Choose (approximately) five exciting papers and write a short summary (0.5 pages) for each paper and send to the TA by Monday morning.
+    * Give a five minute presentation at the beginning of the next class (five minutes total, not per paper).
+ 
 
 ## Grading
 * 20% class participation
 * 25% weekly reading assignment
-  * 10% discussion leads
-  * 15% individual reading assignments
+  * 7.5% discussion leads
+  * 7.5% Arxiv leads (new this semester!)
+  * 10% individual reading assignments
 * 55% project
 
 ## Additional Notes
