@@ -160,7 +160,7 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
     </tr>
     <tr>
       <td>11/06</td>
-      <td>TBA</td>
+      <td>Li Deng</td>
       <td>TBA</td>
       <td>TBA</td>
       <td></td>
