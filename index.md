@@ -84,11 +84,13 @@ To get announcements about information about the class including guest speakers,
       Main Readings:
       <ul>
       <li><a href="http://vladlen.info/publications/learning-act-predicting-future/">Learning to Act by Predicting the Future</a> by A. Dosovitskiy and V. Koltun</li>
+      <li><a href="http://vladlen.info/publications/playing-for-benchmarks/">Playing for Benchmarks</a> by S. Richter, Z, Hayder, and V. Koltun</li>
       </ul>
       Background Reading:
       <ul>
       <li>
-      <a href="https://papers.cnl.salk.edu/PDFs/A%20Critique%20of%20Pure%20Vision%201994-2933.pdf">A Critique of Pure Vision</a> by P. Churchland, V.S. Ramachandran, and T. Sejnowski.
+      <a href="https://papers.cnl.salk.edu/PDFs/A%20Critique%20of%20Pure%20Vision%201994-2933.pdf">A Critique of Pure Vision</a> by P. Churchland, V.S. Ramachandran, and T. Sejnowski. </li>
+      <li><a href="http://vladlen.info/publications/playing-data-ground-truth-computer-games/">Playing for Data: Ground Truth from Computer Games</a> by S.Richter, V. Vineet, S. Roth, and V. Kolton.
       </li>
       </ul>
       </td>
