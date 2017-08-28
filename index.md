@@ -32,9 +32,7 @@ Lisa Anne: Monday 5--6:00 pm, Soda-Alcove-283H
 ## Mailing list and Piazza
 To get announcements about information about the class including guest speakers, and more generally, deep learning talks at Berkeley, please sign up for the [talk announcement mailing list](https://groups.google.com/forum/#!forum/berkeley-deep-learning) for future announcements.
 
-If you are in the class, you may sign up on [Piazza](https://piazza.com/class/j4ock30iz2t2xk).
-
-Additionally, we have a [slack channel](https://cs294-131-f17.slack.com) for the class.  
+If you are in the class, you may sign up on [Piazza](https://piazza.com/class/j4ock30iz2t2xk).  Additionally, you should sign up for the [class slack channel](https://cs294-131-f17.slack.com) and the [class google group](https://groups.google.com/forum/#!forum/cs-294-131-f17) (this is different than the talk announcement mailing list).
 
 ## Syllabus
 
