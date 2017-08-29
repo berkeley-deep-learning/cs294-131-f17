@@ -8,6 +8,16 @@ Tensors are higher order extensions of matrices that can incorporate multiple mo
 
 Anima Anandkumar is a Bren professor at Caltech CMS department and a principal scientist at Amazon Web Services.   Her research interests are in the areas of large-scale machine learning, non-convex optimization and high-dimensional statistics. In particular, she has been spearheading the development and analysis of tensor algorithms.  She is the recipient of several awards such as the Alfred. P. Sloan Fellowship, Microsoft Faculty Fellowship, Google research award, ARO and AFOSR Young Investigator Awards, NSF Career Award, Early Career Excellence in Research Award at UCI, Best Thesis Award from the ACM Sigmetrics society, IBM Fran Allen PhD fellowship, and several best paper awards. She has been featured in a number of forums such as the yourstory, Quora ML session, Huffington post, Forbes, O’Reilly media, and so on.  She received her B.Tech in Electrical Engineering from IIT Madras in 2004 and her PhD from Cornell University in 2009. She was a postdoctoral researcher at MIT from 2009 to 2010, an assistant professor at U.C. Irvine between 2010 and 2016, and a visiting researcher at Microsoft Research New England in 2012 and 2014.
 
+## Vladlen Koltun: Learning to Act with Natural Supervision
+
+### Abstract
+
+I will begin by discussing the common organization of machine learning into supervised, unsupervised, and reinforcement learning. I will argue that these distinctions have largely outlived their usefulness, in part because the terms are heavily overloaded and mean different things to different people (or even the same people at different times of day). I will discuss natural supervision as a regime that supports robust algorithmic machinery, scalable datasets, and the coupling of perception and action. This will be illustrated via recent work that uses natural supervision to train intelligent systems that act in complex and dynamic three-dimensional environments based on raw sensory input.
+
+### Bio
+
+Vladlen Koltun is the Director of the Intel Visual Computing Lab. He received a PhD in 2002 for new results in theoretical computational geometry, spent three years at UC Berkeley as a postdoc in the theory group, and joined the Stanford Computer Science faculty in 2005 as a theoretician. He switched to research in visual computing in 2007 and joined Intel as a Principal Researcher in 2015 to establish the Visual Computing Lab.
+
 ## Jianfeng Gao: Neural approaches to Machine Reading Comprehension and Dialogue
 
 ### Abstract
@@ -18,13 +28,10 @@ In this talk, I start with a brief introduction to the history of symbolic appro
 
 Jianfeng Gao is Partner Research Manager at Microsoft AI and Research, Redmond. He works on deep learning for text and image processing and leads the development of AI systems for machine reading comprehension (MRC), question answering (QA), dialogue, and business applications. From 2006 to 2014, he was Principal Researcher at Natural Language Processing Group at Microsoft Research, Redmond, where he worked on Web search, query understanding and reformulation, ads prediction, and statistical machine translation. From 2005 to 2006, he was a Research Lead in Natural Interactive Services Division at Microsoft, where he worked on Project X, an effort of developing natural user interface for Windows. From 2000 to 2005, he was Research Lead in Natural Language Computing Group at Microsoft Research Asia, where he and his colleagues developed the first Chinese speech recognition system released with Microsoft Office, the Chinese/Japanese Input Method Editors (IME) which were the leading products in the market, and the natural language platform for Microsoft Windows.
 
-## Vladlen Koltun: Learning to Act with Natural Supervision
+## Percy Liang: Fighting Black Boxes, Adversaries, and Bugs in Deep Learning
 
 ### Abstract
 
-I will begin by discussing the common organization of machine learning into supervised, unsupervised, and reinforcement learning. I will argue that these distinctions have largely outlived their usefulness, in part because the terms are heavily overloaded and mean different things to different people (or even the same people at different times of day). I will discuss natural supervision as a regime that supports robust algorithmic machinery, scalable datasets, and the coupling of perception and action. This will be illustrated via recent work that uses natural supervision to train intelligent systems that act in complex and dynamic three-dimensional environments based on raw sensory input.
+While deep learning has been hugely successful in producing highly accurate models, the resulting models are sometimes (i) difficult to interpret, (ii) susceptible to adversaries, and (iii) suffer from subtle implementation bugs due to their stochastic nature.  In this talk, I will take some initial steps towards addressing these problems of interpretability, robustness, and correctness using some classic mathematical tools.  First, influence functions from robust statistics can help us understand the predictions of deep networks by answering the question: which training examples are most influential on a particular prediction?  Second, semidefinite relaxations can be used to provide guaranteed upper bounds on the amount of damage an adversary can do for restricted models.  Third, we use the Lean proof assistant to produce a working implementation of stochastic computation graphs which is guaranteed to be bug-free.
 
-### Bio
-
-Vladlen Koltun is the Director of the Intel Visual Computing Lab. He received a PhD in 2002 for new results in theoretical computational geometry, spent three years at UC Berkeley as a postdoc in the theory group, and joined the Stanford Computer Science faculty in 2005 as a theoretician. He switched to research in visual computing in 2007 and joined Intel as a Principal Researcher in 2015 to establish the Visual Computing Lab.
 
