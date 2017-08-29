@@ -174,7 +174,9 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <a href="https://arxiv.org/abs/1506.05254">Gradient Estimation Using Stochastic Computation Graphs </a> by J. Schulman, N. Heess, T. Weber, and P. Abbeel</li>
       </ul>
       </td>
-      <td>TBA</td>
+      <td>
+      <a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#percy-liang-fighting-black-boxes-adversaries-and-bugs-in-deep-learning">Fighting Black Boxes, Adversaries, and Bugs in Deep Learning</a>
+      </td>
       <td>Project Milestone Due</td>
     </tr>
     <tr>
