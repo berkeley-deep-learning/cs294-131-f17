@@ -156,7 +156,24 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
     <tr>
       <td>10/30</td>
       <td>Percy Liang</td>
-      <td>TBA</td>
+      <td>
+      Main reading:
+      <ul>
+      <li>
+      <a href="https://arxiv.org/pdf/1703.04730.pdf">Understanding Black-box Predictions via Influence Functions</a> by P.W. Koh and P. Liang</li>
+      <li>
+      <a href="https://arxiv.org/pdf/1706.08605.pdf">Developing Bug-Free Machine Learning Systems With Formal Mathematics</a> by D. Selsam, P. Liang, and D. Dill.</li>
+      </ul>
+      Background Reading:
+      <ul>
+      <li>
+      <a href="http://arxiv.org/pdf/1702.08608.pdf">A Roadmap for a Rigorous Science of Interpretability</a> by F. Doshi-Velez and B. Kim.</li>
+      <li>
+      <a href="http://arxiv.org/pdf/1705.07263.pdf">Adversarial Examples Are Not Easily Detected: Bypassing Ten Detection Methods</a> by N. Carlini and D. Wagner.</li>
+      <li>
+      <a href="https://arxiv.org/abs/1506.05254">Gradient Estimation Using Stochastic Computation Graphs </a> by J. Schulman, N. Heess, T. Weber, and P. Abbeel</li>
+      </ul>
+      </td>
       <td>TBA</td>
       <td>Project Milestone Due</td>
     </tr>
