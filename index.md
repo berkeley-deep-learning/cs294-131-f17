@@ -29,9 +29,7 @@ Lisa Anne: Monday 5--6:00 pm, Soda-Alcove-283H
 
 **Location**: 306 Soda
 
-## Room Limit
-
-Soda 306 is designed for smaller courses.  We increased course enrollment so more students could benefit from this course.  However, if the room becomes too full (and thus poses a fire hazard), students who arrive after the room has reached capacity will be directed to watch the lecture remotely.  The link for webcast (and recorded lectures) can be found on Piazza.
+**Room Limit**:  Soda 306 is designed for smaller courses.  We increased course enrollment so more students could benefit from this course.  However, if the room becomes too full (and thus poses a fire hazard), students who arrive after the room has reached capacity will be directed to watch the lecture remotely.  The link for the live webcast (and recorded lectures) can be found on Piazza.
 
 ## Mailing list and Piazza
 To get announcements about information about the class including guest speakers, and more generally, deep learning talks at Berkeley, please sign up for the [talk announcement mailing list](https://groups.google.com/forum/#!forum/berkeley-deep-learning) for future announcements.
