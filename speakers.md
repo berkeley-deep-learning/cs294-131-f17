@@ -8,6 +8,8 @@ Tensors are higher order extensions of matrices that can incorporate multiple mo
 
 Anima Anandkumar is a Bren professor at Caltech CMS department and a principal scientist at Amazon Web Services.   Her research interests are in the areas of large-scale machine learning, non-convex optimization and high-dimensional statistics. In particular, she has been spearheading the development and analysis of tensor algorithms.  She is the recipient of several awards such as the Alfred. P. Sloan Fellowship, Microsoft Faculty Fellowship, Google research award, ARO and AFOSR Young Investigator Awards, NSF Career Award, Early Career Excellence in Research Award at UCI, Best Thesis Award from the ACM Sigmetrics society, IBM Fran Allen PhD fellowship, and several best paper awards. She has been featured in a number of forums such as the yourstory, Quora ML session, Huffington post, Forbes, O’Reilly media, and so on.  She received her B.Tech in Electrical Engineering from IIT Madras in 2004 and her PhD from Cornell University in 2009. She was a postdoctoral researcher at MIT from 2009 to 2010, an assistant professor at U.C. Irvine between 2010 and 2016, and a visiting researcher at Microsoft Research New England in 2012 and 2014.
 
+[Slides.]("slides/berkeley-aug2017.pdf")
+
 ## Vladlen Koltun: Learning to Act with Natural Supervision
 
 ### Abstract
