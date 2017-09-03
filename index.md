@@ -260,7 +260,8 @@ Students may enroll in this class for variable units.
     * Summarize questions proposed by students to form the poll and send it by Friday 11:59 pm
     * Summarize the poll to generate a ranked & categorized discussion question list and send the list to teaching staff by Sunday 7pm
  * Arxiv leads (new this semester!),
-    * Throughout the week discuss papers which have appeared on Arxiv during the week (papers which appear Sunday-Thursday night before the Monday class) on Piazza.  All Arxiv leads are expected to be involved in the Piazza discussion.  Other students may participate as well, but they are not required to.
+    * Throughout the week discuss papers which have appeared on Arxiv during the prior week on Slack.  All Arxiv leads are expected to be involved in the Slack discussion.  Other students may participate as well, but they are not required to.  
+      * [Arxiv](https://arxiv.org/) is an archive of scientific papers covering a broad set of fields.  When researchers want to share their results, they frequently place the paper on Arxiv.  There are a few Arxiv pages Arxiv leads should follow: [Computation and Language](https://arxiv.org/list/cs.CL/recent), [Artificial Intelligence](https://arxiv.org/list/cs.AI/recent), [Computer Vision and Pattern Recognition](https://arxiv.org/list/cs.CL/recent), [Learning](https://arxiv.org/list/cs.CV/recent), [Robotics](https://arxiv.org/list/cs.RO/recent), and [Neural and Evolutionary Computing](https://arxiv.org/list/cs.NE/recent).  Not all papers are deep learning papers, but most (if not all) deep learning papers will fall into one of these categories.
     * Choose (approximately) five exciting papers and write a short summary (0.5 pages) for each paper and send to the TA by Monday morning.
     * Give a five minute presentation at the beginning of the next class (five minutes total, not per paper).
  
