@@ -212,9 +212,9 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <td></td>
     </tr>
     <tr>
-      <td>12/01</td>
+      <td>11/27 DATE CHANGED!</td>
       <td>Poster Session</td>
-      <td></td>
+      <td>3:00-5:00 (tentative)</td>
       <td></td>
       <td></td>
     </tr>
