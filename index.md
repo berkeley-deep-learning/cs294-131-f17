@@ -8,7 +8,9 @@
 <div class="instructor">
   <a href="https://people.eecs.berkeley.edu/~dawnsong/">
   <div class="instructorphoto"><img src="dawnsong.jpg"></div>
-  <div>Dawn Song </div>
+  <div>Dawn Song 
+  <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fpeople.eecs.berkeley.edu%2F~dawnsong%2F&ref_src=twsrc%5Etfw&screen_name=dawnsongtweets&tw_p=followbutton">(Twitter)</a>
+  </div>
   </a>
   
 </div>
