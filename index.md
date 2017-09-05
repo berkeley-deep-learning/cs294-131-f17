@@ -3,7 +3,6 @@
   <a href="https://people.eecs.berkeley.edu/~trevor/">
   <div class="instructorphoto"><img src="trevordarrell.jpg"></div>
   <div>Trevor Darrell</div>
-    </br>
   </a>
 </div>
 <div class="instructor">
