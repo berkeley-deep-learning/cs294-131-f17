@@ -10,6 +10,7 @@
   <div class="instructorphoto"><img src="dawnsong.jpg"></div>
   <div>Dawn Song</div>
   </a>
+  <a href="https://twitter.com/dawnsongtweets">Follow on Twitter!</a>
 </div>
 
 ## Teaching Assistants
