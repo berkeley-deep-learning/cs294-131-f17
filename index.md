@@ -9,9 +9,9 @@
   <a href="https://people.eecs.berkeley.edu/~dawnsong/">
   <div class="instructorphoto"><img src="dawnsong.jpg"></div>
   </a>
-  <div>Dawn Song 
+  <div>Dawn Song </div>
   <img src="https://upload.wikimedia.org/wikipedia/de/thumb/9/9f/Twitter_bird_logo_2012.svg/154px-Twitter_bird_logo_2012.svg.png" height=16 width=16>
-  </div>
+  
   
 </div>
 
