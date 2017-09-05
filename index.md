@@ -9,7 +9,7 @@
   <a href="https://people.eecs.berkeley.edu/~dawnsong/">
   <div class="instructorphoto"><img src="dawnsong.jpg"></div>
   <div>Dawn Song 
-  <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fpeople.eecs.berkeley.edu%2F~dawnsong%2F&ref_src=twsrc%5Etfw&screen_name=dawnsongtweets&tw_p=followbutton"><img src="http://is5.mzstatic.com/image/thumb/Purple128/v4/7c/a2/98/7ca298d1-b5df-704a-14da-c836f475b092/source/1200x630bb.jpg" height=16 width=16></a>
+  <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fpeople.eecs.berkeley.edu%2F~dawnsong%2F&ref_src=twsrc%5Etfw&screen_name=dawnsongtweets&tw_p=followbutton"><img src="twitter.jpg" height=16 width=16></a>
   </div>
   </a>
   
