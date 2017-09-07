@@ -203,8 +203,18 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
     <tr>
       <td>11/20</td>
       <td>Rishabh Singh</td>
-      <td>TBA</td>
-      <td>TBA</td>
+      <td>Main Reading:
+      <ul>
+      <li><a href="https://rishabhmit.bitbucket.io/papers/icml17.pdf">RobustFill: Neural Program Learning under Noisy I/O </a> by J. Devlin, J. Uesato, S. Bhupatiraju, R. Singh, A. Mohamed, and P. Kohli.</li>
+      <li><a href="https://arxiv.org/abs/1611.01855">Neuro-symbolic Program Synthesis</a> by E. Parisotto, A. Mohamed, R. Singh, L. Li, D. Zhou, and P. Kohli</li>
+      </ul>
+      Background Reading:
+      <ul>
+      <li><a href="https://rishabhmit.bitbucket.io/papers/ap_snapl.pdf">AP: Artificial Programming</a> by R. Singh and P. Kohli</li>
+      <li><a href="https://arxiv.org/abs/1410.5401" >Neural Turing Machines</a> by A. Graves, G. Wayne, I. Danihelka</li>
+      </ul>
+      </td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#rishabh-singh-neural-program-synthesis">Neural Program Synthesis</a></td>
       <td></td>
     </tr>
     <tr>
