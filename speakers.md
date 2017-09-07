@@ -36,4 +36,20 @@ Jianfeng Gao is Partner Research Manager at Microsoft AI and Research, Redmond. 
 
 While deep learning has been hugely successful in producing highly accurate models, the resulting models are sometimes (i) difficult to interpret, (ii) susceptible to adversaries, and (iii) suffer from subtle implementation bugs due to their stochastic nature.  In this talk, I will take some initial steps towards addressing these problems of interpretability, robustness, and correctness using some classic mathematical tools.  First, influence functions from robust statistics can help us understand the predictions of deep networks by answering the question: which training examples are most influential on a particular prediction?  Second, semidefinite relaxations can be used to provide guaranteed upper bounds on the amount of damage an adversary can do for restricted models.  Third, we use the Lean proof assistant to produce a working implementation of stochastic computation graphs which is guaranteed to be bug-free.
 
+## Rishabh Singh: Neural Program Synthesis
 
+### Abstract
+
+The key to attaining general artificial intelligence is to develop architectures that are capable of
+learning complex algorithmic behaviors modeled as programs. The ability to learn programs allows these
+architectures to learn to compose high-level abstractions with complex control-flow, which can lead to many
+potential benefits: i) enable neural architectures to perform more complex tasks, ii) learn interpretable
+representations (programs which can be analyzed, debugged, or modified), and iii) better generalization
+to new inputs (like algorithms). In this talk, I will present some of our recent work in developing neural
+architectures for learning complex regular-expression based data transformation programs from input-output examples,
+and will also briefly discuss some other applications such as program repair and optimization that can benefit
+from learning neural program representations.
+
+### Bio
+
+Rishabh Singh is a researcher in the Cognition group at Microsoft Research, Redmond. His research interests span the areas of programming languages, formal methods, and deep learning. His recent work has focused on developing new neural architectures for learning programs. He obtained his PhD in Computer Science from MIT in 2014, where he was a Microsoft Research PhD fellow and was awarded the MIT’s George M. Sprowls Award for Best PhD Dissertation. He obtained his BTech in Computer Science from IIT Kharagpur in 2008, where he was awarded the Institute Silver Medal and Bigyan Sinha Memorial Award.
