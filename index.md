@@ -189,8 +189,25 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
     <tr>
       <td>11/06</td>
       <td>Li Deng</td>
-      <td>TBA</td>
-      <td>TBA</td>
+      <td>
+      Main Reading:
+      <ul>
+      <li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/HintonDengYuEtAl-SPM2012.pdf">Deep neural networks for acoustic modeling in speech recognition</a> by G. Hinton, L. Deng, D. Yu, G. Dahl, A. Mohamed, N. Jaitly, A. Senior, V. Vanhouke, P. Nguyen, T. Sainath, and B. Kingsbury.</li>
+      <li><a href="https://arxiv.org/pdf/1702.07817.pdf">An Unsupervised Learning Method Exploiting Sequential Output Statistics</a> by Y. Liu, J. Chen, and L.Deng.
+      </li>
+      </ul>
+      Background Reading:
+      <ul>
+      <li><a href="http://www.aclweb.org/anthology/P13-1021">Unsupervised transcription of historical documents</a> by T. Berk-Kirkpatrick, G. Durrett, and D. Klein.
+      </li>
+      <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=GQWTo4MAAAAJ&citation_for_view=GQWTo4MAAAAJ:t13vp6B-Zw8C">Deep Learning: Methods and Applications (Ch. 2, 7, 11)</a> by L. Deng and D. Yu.
+      </li>
+      <li>
+      <a href="http://www.deeplearningbook.org/">Deep Learning (Ch. 8, 10, 20)</a> by I. Goodfellow, Y. Bengio, and A. Coourville.
+      </li>
+      </ul>
+      </td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#li-deng-from-supervised-to-unsupervised-deep-learning-successes-and-challenges">From Supervised to Unsupervised Deep Learning: Successes and Challenges</a></td>
       <td></td>
     </tr>
     <tr>
