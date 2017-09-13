@@ -132,8 +132,15 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
     <tr>
       <td>09/25</td>
       <td>Quoc Le and Barret Zoph</td>
-      <td>TBA</td>
-      <td>TBA</td>
+      <td>
+      Main Reading:
+      <ul>
+      <li><a href="https://www.openreview.net/pdf?id=r1Ue8Hcxg">Neural Architecture Search with Reinforcement Learning</a> by B. Zoph and Q. Le
+      </li>
+      <li><a href="https://arxiv.org/abs/1707.07012">Learning Transferable Architectures for Scalable Image Recognition</a> by B. Zoph, V. Vasudevan, J. Schlens, and Q. Le
+      </ul>
+      </td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#barret-zoph-learning-transferable-architectures-for-imageNet">Learning Transferable Architectures for ImageNet</a></td>
       <td></td>
     </tr>
     <tr>
