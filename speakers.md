@@ -30,6 +30,20 @@ In this talk, I start with a brief introduction to the history of symbolic appro
 
 Jianfeng Gao is Partner Research Manager at Microsoft AI and Research, Redmond. He works on deep learning for text and image processing and leads the development of AI systems for machine reading comprehension (MRC), question answering (QA), dialogue, and business applications. From 2006 to 2014, he was Principal Researcher at Natural Language Processing Group at Microsoft Research, Redmond, where he worked on Web search, query understanding and reformulation, ads prediction, and statistical machine translation. From 2005 to 2006, he was a Research Lead in Natural Interactive Services Division at Microsoft, where he worked on Project X, an effort of developing natural user interface for Windows. From 2000 to 2005, he was Research Lead in Natural Language Computing Group at Microsoft Research Asia, where he and his colleagues developed the first Chinese speech recognition system released with Microsoft Office, the Chinese/Japanese Input Method Editors (IME) which were the leading products in the market, and the natural language platform for Microsoft Windows.
 
+## Barret Zoph and Quoc Le: Learning Transferable Architectures for ImageNet
+
+### Abstract
+
+In this talk, we will discuss the use of Reinforcement Learning to automate the process of designing neural architectures (Neural Architecture Search).
+We will also report our recent results on applying this method to the ImageNet classification dataset.
+
+### Bio
+
+Quoc is a research scientist at Google Brain. Prior to Google Brain, Quoc did his PhD at  Stanford. He was recognized at one of top innovators in 2014 by MIT Technology Review for his work on large scale deep learning. 
+
+Barret is a research scientist at Google Brain. Prior to Google Brain, Barret did his undergraduate at USC and worked on Natural Language Understanding.
+
+
 ## Percy Liang: Fighting Black Boxes, Adversaries, and Bugs in Deep Learning
 
 ### Abstract
