@@ -41,6 +41,10 @@ To get announcements about information about the class including guest speakers,
 
 If you are in the class, you may sign up on [Piazza](https://piazza.com/class/j4ock30iz2t2xk).  Additionally, you should sign up for the [class slack channel](https://cs294-131-f17.slack.com) and the [class google group](https://groups.google.com/forum/#!forum/cs-294-131-f17) (this is different than the talk announcement mailing list).
 
+## Arxiv Summaries
+
+This semester we started summarizing interesting papers from Arxiv each week.  Check out the papers we have chosen and summarized [here](https://github.com/berkeley-deep-learning/cs294-131-f17/blob/master/arxiv.md)!
+
 ## Syllabus
 
 <table style="table-layout: fixed; font-size: 88%;">
