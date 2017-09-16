@@ -139,7 +139,9 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <li><a href="https://arxiv.org/abs/1707.07012">Learning Transferable Architectures for Scalable Image Recognition</a> by B. Zoph, V. Vasudevan, J. Schlens, and Q. Le.</li>
       </ul>
       </td>
-      <td></td>
+      <td>
+      <a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#barret-zoph-and-quoc-lelearning-transferable-architectures-for-imageNet">Learning Transferable Architectures for ImageNet</a>
+      </td>
       <td></td>
    </tr>
    <tr>
