@@ -134,6 +134,10 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <td>Quoc Le and Barret Zoph</td>
       <td>
       Main Reading:
+       <ul>
+      <li><a href="https://www.openreview.net/pdf?id=r1Ue8Hcxg">Neural Architecture Search with Reinforcement Learning</a> by B. Zoph and Q. Le.</li>
+      <li><a href="https://arxiv.org/abs/1707.07012">Learning Transferable Architectures for Scalable Image Recognition</a> by B. Zoph, V. Vasudevan, J. Schlens, and Q. Le.</li>
+      </ul>
       </td>
       <td></td>
       <td></td>
