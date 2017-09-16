@@ -129,6 +129,129 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#jianfeng-gao-neural-appraches-to-machine-reading-comprehension-and-dialogue">Neural approaches to Machine Reading Comprehension and Dialogue</a></td>
       <td>Project Proposal Due</td>
     </tr>
+   <tr>
+      <td>10/02</td>
+      <td>Ross Girshik</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10/09</td>
+      <td>Igor Mordatch</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10/16</td>
+      <td>David Patterson</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10/23</td>
+      <td>Matthew Johnson</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10/30</td>
+      <td>Percy Liang</td>
+      <td>
+      Main reading:
+      <ul>
+      <li>
+      <a href="https://arxiv.org/pdf/1703.04730.pdf">Understanding Black-box Predictions via Influence Functions</a> by P.W. Koh and P. Liang</li>
+      <li>
+      <a href="https://arxiv.org/pdf/1706.08605.pdf">Developing Bug-Free Machine Learning Systems With Formal Mathematics</a> by D. Selsam, P. Liang, and D. Dill.</li>
+      </ul>
+      Background Reading:
+      <ul>
+      <li>
+      <a href="http://arxiv.org/pdf/1702.08608.pdf">A Roadmap for a Rigorous Science of Interpretability</a> by F. Doshi-Velez and B. Kim.</li>
+      <li>
+      <a href="http://arxiv.org/pdf/1705.07263.pdf">Adversarial Examples Are Not Easily Detected: Bypassing Ten Detection Methods</a> by N. Carlini and D. Wagner.</li>
+      <li>
+      <a href="https://arxiv.org/abs/1506.05254">Gradient Estimation Using Stochastic Computation Graphs </a> by J. Schulman, N. Heess, T. Weber, and P. Abbeel</li>
+      </ul>
+      </td>
+      <td>
+      <a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#percy-liang-fighting-black-boxes-adversaries-and-bugs-in-deep-learning">Fighting Black Boxes, Adversaries, and Bugs in Deep Learning</a>
+      </td>
+      <td>Project Milestone Due</td>
+    </tr>
+     <tr>
+      <td>11/06</td>
+      <td>Li Deng</td>
+      <td>
+      Main Reading:
+      <ul>
+      <li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/HintonDengYuEtAl-SPM2012.pdf">Deep neural networks for acoustic modeling in speech recognition</a> by G. Hinton, L. Deng, D. Yu, G. Dahl, A. Mohamed, N. Jaitly, A. Senior, V. Vanhouke, P. Nguyen, T. Sainath, and B. Kingsbury.</li>
+      <li><a href="https://arxiv.org/pdf/1702.07817.pdf">An Unsupervised Learning Method Exploiting Sequential Output Statistics</a> by Y. Liu, J. Chen, and L.Deng.
+      </li>
+      </ul>
+      Background Reading:
+      <ul>
+      <li><a href="http://www.aclweb.org/anthology/P13-1021">Unsupervised transcription of historical documents</a> by T. Berk-Kirkpatrick, G. Durrett, and D. Klein.
+      </li>
+      <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=GQWTo4MAAAAJ&citation_for_view=GQWTo4MAAAAJ:t13vp6B-Zw8C">Deep Learning: Methods and Applications (Ch. 2, 7, 11)</a> by L. Deng and D. Yu.
+      </li>
+      <li>
+      <a href="http://www.deeplearningbook.org/">Deep Learning (Ch. 8, 10, 20)</a> by I. Goodfellow, Y. Bengio, and A. Coourville.
+      </li>
+      </ul>
+      </td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#li-deng-from-supervised-to-unsupervised-deep-learning-successes-and-challenges">From Supervised to Unsupervised Deep Learning: Successes and Challenges</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11/13</td>
+      <td>Rob Fergus</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11/20</td>
+      <td>Rishabh Singh</td>
+      <td>Main Reading:
+      <ul>
+      <li><a href="https://rishabhmit.bitbucket.io/papers/icml17.pdf">RobustFill: Neural Program Learning under Noisy I/O </a> by J. Devlin, J. Uesato, S. Bhupatiraju, R. Singh, A. Mohamed, and P. Kohli.</li>
+      <li><a href="https://arxiv.org/abs/1611.01855">Neuro-symbolic Program Synthesis</a> by E. Parisotto, A. Mohamed, R. Singh, L. Li, D. Zhou, and P. Kohli</li>
+      </ul>
+      Background Reading:
+      <ul>
+      <li><a href="https://rishabhmit.bitbucket.io/papers/ap_snapl.pdf">AP: Artificial Programming</a> by R. Singh and P. Kohli</li>
+      <li><a href="https://arxiv.org/abs/1410.5401" >Neural Turing Machines</a> by A. Graves, G. Wayne, I. Danihelka</li>
+      </ul>
+      </td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#rishabh-singh-neural-program-synthesis">Neural Program Synthesis</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11/27</td>
+      <td>Danny Tarlow</td>
+      <td>TBA</td>
+      <td>TBA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11/27 DATE CHANGED!</td>
+      <td>Poster Session</td>
+      <td>3:00-5:00 (tentative)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12/09</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Final Report Due</td>
+    </tr>
   </tbody>
 </table>
 
