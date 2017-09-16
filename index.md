@@ -135,67 +135,13 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <td>
       Main Reading:
       <ul>
-      <li><a href="https://www.openreview.net/pdf?id=r1Ue8Hcxg">Neural Architecture Search with Reinforcement Learning</a> by B. Zoph and Q. Le
+      <li><a href="https://www.openreview.net/pdf?id=r1Ue8Hcxg">Neural Architecture Search with Reinforcement Learning</a> by B. Zoph and Q. Le.
       </li>
       <li><a href="https://arxiv.org/abs/1707.07012">Learning Transferable Architectures for Scalable Image Recognition</a> by B. Zoph, V. Vasudevan, J. Schlens, and Q. Le
       </ul>
       </td>
       <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#barret-zoph-and-quoc-lelearning-transferable-architectures-for-imageNet">Learning Transferable Architectures for ImageNet</a></td>
       <td></td>
-    </tr>
-    <tr>
-      <td>10/02</td>
-      <td>Ross Girshik</td>
-      <td>TBA</td>
-      <td>TBA</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>10/09</td>
-      <td>Igor Mordatch</td>
-      <td>TBA</td>
-      <td>TBA</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>10/16</td>
-      <td>David Patterson</td>
-      <td>TBA</td>
-      <td>TBA</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>10/23</td>
-      <td>Matthew Johnson</td>
-      <td>TBA</td>
-      <td>TBA</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>10/30</td>
-      <td>Percy Liang</td>
-      <td>
-      Main reading:
-      <ul>
-      <li>
-      <a href="https://arxiv.org/pdf/1703.04730.pdf">Understanding Black-box Predictions via Influence Functions</a> by P.W. Koh and P. Liang</li>
-      <li>
-      <a href="https://arxiv.org/pdf/1706.08605.pdf">Developing Bug-Free Machine Learning Systems With Formal Mathematics</a> by D. Selsam, P. Liang, and D. Dill.</li>
-      </ul>
-      Background Reading:
-      <ul>
-      <li>
-      <a href="http://arxiv.org/pdf/1702.08608.pdf">A Roadmap for a Rigorous Science of Interpretability</a> by F. Doshi-Velez and B. Kim.</li>
-      <li>
-      <a href="http://arxiv.org/pdf/1705.07263.pdf">Adversarial Examples Are Not Easily Detected: Bypassing Ten Detection Methods</a> by N. Carlini and D. Wagner.</li>
-      <li>
-      <a href="https://arxiv.org/abs/1506.05254">Gradient Estimation Using Stochastic Computation Graphs </a> by J. Schulman, N. Heess, T. Weber, and P. Abbeel</li>
-      </ul>
-      </td>
-      <td>
-      <a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#percy-liang-fighting-black-boxes-adversaries-and-bugs-in-deep-learning">Fighting Black Boxes, Adversaries, and Bugs in Deep Learning</a>
-      </td>
-      <td>Project Milestone Due</td>
     </tr>
   </tbody>
 </table>
