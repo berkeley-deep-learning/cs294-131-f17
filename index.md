@@ -129,6 +129,15 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#jianfeng-gao-neural-appraches-to-machine-reading-comprehension-and-dialogue">Neural approaches to Machine Reading Comprehension and Dialogue</a></td>
       <td>Project Proposal Due</td>
     </tr>
+    <tr>
+      <td>09/25</td>
+      <td>Quoc Le and Barret Zoph</td>
+      <td>
+      Main Reading:
+      </td>
+      <td></td>
+      <td></td>
+   </tr>
    <tr>
       <td>10/02</td>
       <td>Ross Girshik</td>
