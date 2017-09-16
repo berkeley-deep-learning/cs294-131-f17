@@ -82,7 +82,7 @@ This semester we started summarizing interesting papers from Arxiv each week.  C
       <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#anima-anandkumar-role-of-tensors-in-machine-learning">Role of Tensors in Machine Learning</a>       </td>
       <td></td>
     </tr>
-    <tr>
+        <tr>
       <td>09/05</td>
       <td>Labor Day - No Class</td>
       <td>
