@@ -166,7 +166,7 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       </li>
       </ul>
       </td>
-      <td>TBA</td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#ross-girshick-the-past-present-and-future-of-object-detection">The Past, Present, and Future of Object Detection</a></td>
       <td></td>
     </tr>
     <tr>
