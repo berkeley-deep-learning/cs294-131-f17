@@ -43,6 +43,17 @@ Quoc is a research scientist at Google Brain. Prior to Google Brain, Quoc did hi
 
 Barret is a research scientist at Google Brain. Prior to Google Brain, Barret did his undergraduate at USC and worked on Natural Language Understanding.
 
+## Ross Girshick: The Past, Present, and Future of Object Detection
+
+### Abstract
+
+Object detection has rapidly transformed from a research area in which not much worked, to one that some people now consider solved. If it is solved, what's next? In this talk, I will cover the nuts and bolts of current state-of-the-art object detection systems (the “solution”), relate these ideas to classical methods, and share thoughts on the future of research in this and related areas. Perhaps unsurprisingly, I will argue against the view that object detection is a solved problem and instead provide evidence for how its challenges have shifted over time. This talk will cover recent work from Facebook AI Research (FAIR) on Feature Pyramid Networks and Mask R-CNN, which are state-of-the-art on the COCO Challenge Dataset.
+
+
+### Bio
+
+Ross Girshick is a research scientist at Facebook AI Research (FAIR), working on computer vision and machine learning. He received a PhD in computer science from the University of Chicago under the supervision of Pedro Felzenszwalb in 2012. Prior to joining FAIR, he completed a postdoc at the University of California, Berkeley, where he was advised by Jitendra Malik and Trevor Darrell, and he was a researcher at Microsoft Research, Redmond. His interests include instance-level object understanding and visual reasoning challenges that combine natural language processing with computer vision. He received the 2017 PAMI Young Researcher Award and is well-known for developing the R-CNN (Region-based Convolution Neural Network) approach to object detection.
+
 
 ## Percy Liang: Fighting Black Boxes, Adversaries, and Bugs in Deep Learning
 
