@@ -156,6 +156,15 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <a href="https://arxiv.org/abs/1707.07998">Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering.</a> by P. Anderson, X. He, C. Buehler, D. Teney, M. Johnson, S. Gould, and L. Zhang.
       </li>
       </ul>
+      Background Reading:
+      <ul>
+      <li>
+      <a href="https://arxiv.org/abs/1612.03144">Feature Pyramid Networks for Object Detection</a> by T. Lin, P. Dollar, R. Girshick, K. He, B. Hariharan, S. Belongie
+      </li>
+      <li>
+      <a href="https://arxiv.org/abs/1708.02002">Focal Loss for Dense Object Detection</a> T. Lin, P. Goyal, R. Girshick, K. He, P.Dollar
+      </li>
+      </ul>
       </td>
       <td>TBA</td>
       <td></td>
