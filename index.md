@@ -43,7 +43,7 @@ If you are in the class, you may sign up on [Piazza](https://piazza.com/class/j4
 
 ## Arxiv Summaries
 
-This semester we started summarizing interesting papers from Arxiv each week.  Check out the papers we have chosen and summarized [here](https://github.com/berkeley-deep-learning/cs294-131-f17/blob/master/arxiv.md)!
+This semester we started summarizing interesting papers from Arxiv each week.  Check out the papers we have chosen and summarized [here](https://berkeley-deep-learning.github.io/cs294-131-f17/arxiv.html)!
 
 ## Syllabus
 
