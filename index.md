@@ -147,7 +147,16 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
    <tr>
       <td>10/02</td>
       <td>Ross Girshik</td>
-      <td>TBA</td>
+      <td>Main Reading:
+      <ul>
+      <li>
+      <a href="https://arxiv.org/abs/1703.06870">Mask R-CNN</a> K. He, G. Gkioxari, P. Dollar, R. Girshik
+      </li>
+      <li>
+      <a href="https://arxiv.org/abs/1707.07998">Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering.</a> by P. Anderson, X. He, C. Buehler, D. Teney, M. Johnson, S. Gould, and L. Zhang.
+      </li>
+      </ul>
+      </td>
       <td>TBA</td>
       <td></td>
     </tr>
