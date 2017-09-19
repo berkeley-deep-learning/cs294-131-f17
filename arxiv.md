@@ -1,4 +1,4 @@
-## Arxiv Summaries Week 1
+## Arxiv Summaries Week 09/11
 
 ### PassGAN: A Deep Learning Approach for Password Guessing
 
@@ -90,5 +90,97 @@ The neural network contains separate modules for processing the input image (imp
 **Suitable readers**:
 One shot learning enthusiasts along with those who are interested in representation learning/ unsupervised learning. 
 
+## Arxiv Summaries Week 09/18
+
+### Transform Invariant Auto-encoder
+
+**Authors**:  Tadashi Matsuo, Hiroya Fukuhara and Nobutaka Shimada
+
+**Arxiv Link**: https://arxiv.org/pdf/1709.03754.pdf
+
+**Published on Arxiv**: September, 12 2017
+
+**Executive Summary**: Auto-encoders map data to latent space and vice versa. Typically using L2 norm on the reconstructed data, inputs containing the same spatial subpattern may be mapped to very different latent vectors if the subpatterns appear in different locations. This paper introduces a novel loss function that makes the auto-encoder robust to shifts in input. The authors demonstrated network applied to MNIST and hand-object interactions and showed its robustness against translations. 
+
+**Notable Details**: Notation: {D: decoder, E:encoder, I: input, T: spatial transform}
+The new cost function includes a transform variance term, which measures sum of the error |D(E(I))-D(E(T(I)))| for a variety of  transforms T. This in effect forces the auto-encoder to reconstruct similar images regardless of the spatial location of the pattern. The cost function also includes a modified restoration error term. Instead of |D(E(I))-I| as they usually are in auto-encoders, this term becomes min|D(E(I))-T(I)|, where the minimum is taken over all transforms T. In addition, a transform inference model R can be trained with the loss |R(I)-argmin|I-T(D(E(I)))||, where the argmin is again taken over T. In words this trains R to predict the particular T applied to the input image I. 
+
+**Suitable readers**:
+Those interested in generative networks, or latent dimensionality reduction/clustering. 
+
+### Deep Subspace Clustering Networks
+
+**Authors**:  Pan Ji , Tong Zhang , Hongdong Li , Mathieu Salzmann , Ian Reid
+
+**Arxiv Link**: https://arxiv.org/pdf/1709.02508.pdf
+
+**Published on Arxiv**: September, 8 2017
+
+**Executive Summary**: Subspace clustering aims to cluster data in low-dimensional subspaces. Most works to date focuses on linear subspaces, and works by forming affinity matrix of every pair of data and cluster the data based on the (assumed Euclidean) affinity. Non-linear subspaces have been explored mostly with a fixed kernel that replaces the Euclidean norm. This paper learns a kernel with an auto-encoder architecture, where the encoder serves as the nonlinear map from data space to subspace. The proposed auto-encoder learns subspace structure with a self-expressive layer, which encourages points in the subspace to be representable as linear combinations of other points in the same subspace. 
+
+**Notable Details**: The authors performed experiments on Extended Yale B, ORL, and COIL20/COIL100 datasets. Each of these datasets explore different images of a given number of  human face or 3D objects under different lighting  or orientation. The authors showed that the network significantly improved upon state-of-the-art results in clustering the correct subject. To enable the network to learn with a limited dataset, the autoencoder is first trained without the self-expressive layer, the fine-tuned with the layer. The self-expressiveness matrix is formulated as a fully connected layer and its parameters are trained directly with back-propagation. 
+
+**Suitable readers**:
+Those interested in generative networks, or latent dimensionality reduction/clustering. 
+
+### Explore, Exploit or Listen: Combining Human Feedback and Policy Model to Speed up Deep Reinforcement Learning in 3D Worlds
+
+**Authors**:  Zhiyu Lin, Brent Harrison, Aaron Keech, and Mark O. Riedl
+
+**Arxiv Link**: https://arxiv.org/pdf/1709.03969.pdf
+
+**Published on Arxiv**: September, 12 2017
+
+**Executive Summary**: 
+Interactive machine learning allows humans to demonstrate correct behavior in order to improve and speed-up learning in complex environments. This paper demonstrates an approach enabling humans, or oracles, to provide examples of correct behavior to DQN agents. 
+
+The approach adds an “Arbiter” to the pipeline which decides whether to follow the DQN’s actions or the oracle’s actions (if they differ) based on the past performance of the DQN and the oracle. It can also select a random action based on an exponentially decaying probability. The paper tested their approach on a custom Minecraft map, training the agent to pick up a specific object in the map while providing advice through a simulated oracle. When the oracle provided good advice (70% and 90% accuracy), the model’s performance surpassed that of a DQN. When the oracle provided random advice (50% accuracy), the model’s performance matched that of a DQN.
+
+**Notable Details**: 
+The agent is limited to four directions: North, East, South, West. When turning, the agent's viewing angles may be perturbed up to 2 degrees after turning.
+
+The Arbiter has three checks: exploration (for selecting a random action), confidence, and consensus. Confidence selects between DQN and oracle actions based on past performance of the DQN. Consensus selects between the DQN and oracle randomly according to a moving probability that favors the DQN when the DQN and oracle actions differ. In addition,  the consensus check has 2 parameters that must be tuned: f1 and f2.
+
+The agent in the test environment is punished with a score of -1 for each step taken and rewarded with a score of 100 when it successfully picks up the object.
+
+**Suitable readers**:
+Those interested in methods for training RL agents and in HCI related to machine learning agents.
+
+### Ensemble Methods as a Defense to Adversarial Perturbations Against Deep Neural Networks
+
+**Authors**:  Thilo Strauss, Markus Hanselmann , Andrej Junginger , Holger Ulmer
+
+**Arxiv Link**: https://arxiv.org/pdf/1709.03423.pdf
+
+**Published on Arxiv**: September, 11 2017
+
+**Executive Summary**: 
+Deep neural networks are highly vulnerable to adversarial examples, with some perturbations not being visible to human perception. Constructing adversarial examples is done mainly through two examples, fast gradient sign method (FGSM), which adds noise in the direction of the gradient, and basic iterative method (BIM), which iteratively applies FGSM to data points. Several ensemble methods are discussed and then evaluated with adversarial datasets constructed using FGSM and BIM. The methods discussed were training multiple of the same networks but with different weights, training multiple classifiers each with slightly different architectures, bagging of the training data, and adding small gaussian noise to the dataset. These four methods are tested against FGSM and BIM on the MNIST and CIFAR-10 dataset. The test results indicate that applying the ensemble methods, especially applying gaussian noise, make each dataset more robust against adversarial examples, and the following ensemble makes the classification more robust against adversarial examples. 
+
+**Notable Details**: 
+When testing against adversarial examples generated using FGSM in MNIST, classification accuracy would drop to 35-56% from roughly 99% on the unperturbed dataset. The ensemble method proposed led to a classification accuracy of 57%-78% on the perturbed data. 
+
+FGSM relies on calculation of the gradient and it is much more difficult to calculate the gradient of an ensemble of networks. The two methods for doing so are using the gradient of one of the networks and applying it across the whole architecture in an effort to fool the whole system, or taking a sum of the gradients of the whole system. 
+
+**Suitable readers**:
+Those interested in training for adversarial examples in deep neural networks, with applications including self-driving cars. 
+
+### Learning to Compose Domain-Specific Transformations for Data Augmentation
+
+**Authors**:  Alexander J. Ratner , Henry R. Ehrenberg, Zeshan Hussain, Jared Dunnmon, Christopher Ré
+
+**Arxiv Link**: https://arxiv.org/pdf/1709.01643v1.pdf
+
+**Published on Arxiv**: September, 6 2017
+
+**Executive Summary**:  
+A common technique to boost accuracy of machine learning methods is data augmentation. This is frequently found in computer vision where images will often be mirrored, brightened, translated, and generally transformed in various ways that respect a class level invariance. Often these will not just be done in isolation, but rather they will be applied sequentially with different parameters (such as degree of rotation or amount of increase of brightness). However, haphazardly doing these can lead to bizarre and unrealistic images. This paper investigates automated ways to apply these dataset augmentation techniques. To do this, they have a gene network select which transformation to apply and they have a second network test whether or not the example came from the distribution, among other regulatory features. They trained their method using policy gradient and applied their method to CIFAR-10,  NIST Automatic Content Extraction (ACE) corpus, and the Digital Database for Screening Mammography (DDSM) dataset. They show that their method outperform random and heuristic methods for composing data augmentation transformations.
+
+**Notable Details**: 
+In order to prevent the generator from always outputting a no-op transformation, the authors included a diversity term in their loss function. The diversity term was a distance metric that was either over the raw input or the features before the softmax layer. Another regularization term looked at the difference in predicted classes both before and after transformation was applied and punished the generator when the gap was large.
+
+
+**Suitable readers**: 
+Those interested in data augmentation techniques or those wishing to get a little extra performance out of a system. 
 
 
