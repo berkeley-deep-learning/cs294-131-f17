@@ -56,6 +56,16 @@ Object detection has rapidly transformed from a research area in which not much 
 
 Ross Girshick is a research scientist at Facebook AI Research (FAIR), working on computer vision and machine learning. He received a PhD in computer science from the University of Chicago under the supervision of Pedro Felzenszwalb in 2012. Prior to joining FAIR, he completed a postdoc at the University of California, Berkeley, where he was advised by Jitendra Malik and Trevor Darrell, and he was a researcher at Microsoft Research, Redmond. His interests include instance-level object understanding and visual reasoning challenges that combine natural language processing with computer vision. He received the 2017 PAMI Young Researcher Award and is well-known for developing the R-CNN (Region-based Convolution Neural Network) approach to object detection.
 
+## Igor Mordatch: Emergence of Grounded Compositional Language in Multi-Agent Populations
+
+### Abstract
+
+By capturing statistical patterns in large corpora, machine learning has enabled significant advances in natural language processing, including in machine translation, question answering, and sentiment analysis. However, for agents to intelligently interact with humans, simply capturing the statistical patterns is insufficient. In this paper we investigate if, and how, grounded compositional language can emerge as a means to achieve goals in multi-agent populations. Towards this end, we propose a multi-agent learning environment and learning methods that bring about emergence of a basic compositional language. This language is represented as streams of abstract discrete symbols uttered by agents over time, but nonetheless has a coherent structure that possesses a defined vocabulary and syntax. We also observe emergence of non-verbal communication such as pointing and guiding when language communication is unavailable.
+
+### Bio
+
+Igor Mordatch is a research scientist at OpenAI and faculty at Carnegie Mellon University Robotics Institute. Previously he was a post-doctoral fellow working with professor Pieter Abbeel at University of California, Berkeley and received his PhD at University of Washington and undergraduate degree in University of Toronto. He worked as a visiting researcher at Stanford University and Pixar Research. His research interests lie in the development and use of optimal control and reinforcement learning techniques for robotics.
+
 
 ## Percy Liang: Fighting Black Boxes, Adversaries, and Bugs in Deep Learning
 
