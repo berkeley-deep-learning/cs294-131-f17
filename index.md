@@ -172,8 +172,19 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
     <tr>
       <td>10/09</td>
       <td>Igor Mordatch</td>
-      <td>TBA</td>
-      <td>TBA</td>
+      <td>Main Reading:
+      <ul>
+      <li><a href="https://arxiv.org/pdf/1703.04908.pdf)
+(https://arxiv.org/pdf/1706.02275.pdf">Emergence of Grounded Compositional Language in Multi-Agent Populations</a> by Mordatch and Abbeel.</li>
+      <li><a href="https://arxiv.org/pdf/1706.02275.pdf">Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments</a> by Lowe, Wu, Tamar, Harb, Abbeel, and Mordatch.</li>
+      </ul>
+      Background Reading:
+      <ul>
+      <li><a href="https://arxiv.org/pdf/1610.03585.pdf">A Paradigm for Situated and Goal-Driven Language Learning</a> by Gauthier and Mordatch.</li>
+      <li><a href="https://web.stanford.edu/~ngoodman/papers/FrankGoodman-Science2012.pdf">Predicting Pragmatic Reasoning in Language Games.</a> by Frank and Goodman.</li>
+      </ul>
+      </td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#igor-mordatch-emergence-of-grounded-compositional-language-in-multi-agent-populations">The Past, Present, and Future of Object Detection</a></td>
       <td></td>
     </tr>
     <tr>
