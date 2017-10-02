@@ -45,6 +45,8 @@ Quoc is a research scientist at Google Brain. Prior to Google Brain, Quoc did hi
 
 Barret is a research scientist at Google Brain. Prior to Google Brain, Barret did his undergraduate at USC and worked on Natural Language Understanding.
 
+[Slides.]("slides/le-zoph-slides.pdf")
+
 ## Ross Girshick: The Past, Present, and Future of Object Detection
 
 ### Abstract
