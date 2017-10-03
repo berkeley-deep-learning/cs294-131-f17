@@ -68,6 +68,13 @@ By capturing statistical patterns in large corpora, machine learning has enabled
 
 Igor Mordatch is a research scientist at OpenAI and faculty at Carnegie Mellon University Robotics Institute. Previously he was a post-doctoral fellow working with professor Pieter Abbeel at University of California, Berkeley and received his PhD at University of Washington and undergraduate degree in University of Toronto. He worked as a visiting researcher at Stanford University and Pixar Research. His research interests lie in the development and use of optimal control and reinforcement learning techniques for robotics.
 
+## David Patterson: Evaluation of a Domain-Specific Architecture for Deep Neural Networks in the Datacenter: The Google TPU
+
+### Abstract
+
+### Bio
+
+David Patterson is likely best-known for the book Computer Architecture: A Quantitative Approach written with John Hennessy or for Berkeley research projects Reduced Instruction Set Computers (RISC), Redundant Arrays of Inexpensive Disks (RAID), and Network of Workstations. He also served as Berkeley’s CS Division Chair, the Computing Research Association Chair, and President of the Association for Computing Machinery. This led to election to the National Academy of Engineering, the National Academy of Sciences, and the Silicon Valley Engineering Hall of Fame. He received the Berkeley Citation in 2016 after 40 years as a CS professor. He then joined the Google Brain as a distinguished engineer and serves as Vice-Chair of the Board of Directors of the RISC-V Foundation, an open architecture organization.
 
 ## Percy Liang: Fighting Black Boxes, Adversaries, and Bugs in Deep Learning
 
