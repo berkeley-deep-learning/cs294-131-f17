@@ -81,6 +81,8 @@ Igor Mordatch is a research scientist at OpenAI and faculty at Carnegie Mellon U
 
 ### Abstract
 
+With the ending of Moore's Law, many computer architects believe that major improvements in cost-energy-performance must now come from domain-specific hardware. The Tensor Processing Unit (TPU), deployed in Google datacenters since 2015, is a custom chip that accelerates deep neural networks (DNNs).  We compare the TPU to contemporary server-class CPUs and GPUs deployed in the same datacenters. Our benchmark workload, written using the high-level TensorFlow framework, uses production DNN applications that represent 95% of our datacenters’ DNN demand. The TPU is  an order of magnitude faster than contemporary CPUs and GPUs and its relative performance per Watt is even larger.
+
 ### Bio
 
 David Patterson is likely best-known for the book Computer Architecture: A Quantitative Approach written with John Hennessy or for Berkeley research projects Reduced Instruction Set Computers (RISC), Redundant Arrays of Inexpensive Disks (RAID), and Network of Workstations. He also served as Berkeley’s CS Division Chair, the Computing Research Association Chair, and President of the Association for Computing Machinery. This led to election to the National Academy of Engineering, the National Academy of Sciences, and the Silicon Valley Engineering Hall of Fame. He received the Berkeley Citation in 2016 after 40 years as a CS professor. He then joined the Google Brain as a distinguished engineer and serves as Vice-Chair of the Board of Directors of the RISC-V Foundation, an open architecture organization.
