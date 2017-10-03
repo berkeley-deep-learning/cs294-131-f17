@@ -184,14 +184,22 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <li><a href="https://web.stanford.edu/~ngoodman/papers/FrankGoodman-Science2012.pdf">Predicting Pragmatic Reasoning in Language Games.</a> by Frank and Goodman.</li>
       </ul>
       </td>
-      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#igor-mordatch-emergence-of-grounded-compositional-language-in-multi-agent-populations">The Past, Present, and Future of Object Detection</a></td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#igor-mordatch-emergence-of-grounded-compositional-language-in-multi-agent-populations">Emergence of Grounded Compositional Language in Multi-Agent Populations</a></td>
       <td></td>
     </tr>
     <tr>
       <td>10/16</td>
       <td>David Patterson</td>
-      <td>TBA</td>
-      <td>TBA</td>
+      <td>
+      Main Reading:
+      <ul>
+      <li><a href="https://arxiv.org/abs/1704.04760">In-Datacenter Performance Analysis of a Tensor Processing Unit</a> by Jouppi et al.
+      </li>
+      <li><a href="http://ieeexplore.ieee.org/document/7783710/">A Cloud-Scale Acceleration Architecture</a> by Caulfield et al.
+      </li>
+      </ul>
+      </td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#david-patterson-evaluation-of-a-domain-specific-architecture-for-deep-neural-networks-in-the-datacenter-the-google-tpu">Evaluation of a Domain-Specific Architecture for Deep Neural Networks in the Datacenter: The Google TPU</a></td>
       <td></td>
     </tr>
     <tr>
