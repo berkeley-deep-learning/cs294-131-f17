@@ -58,6 +58,15 @@ Object detection has rapidly transformed from a research area in which not much 
 
 Ross Girshick is a research scientist at Facebook AI Research (FAIR), working on computer vision and machine learning. He received a PhD in computer science from the University of Chicago under the supervision of Pedro Felzenszwalb in 2012. Prior to joining FAIR, he completed a postdoc at the University of California, Berkeley, where he was advised by Jitendra Malik and Trevor Darrell, and he was a researcher at Microsoft Research, Redmond. His interests include instance-level object understanding and visual reasoning challenges that combine natural language processing with computer vision. He received the 2017 PAMI Young Researcher Award and is well-known for developing the R-CNN (Region-based Convolution Neural Network) approach to object detection.
 
+Ross has many nice images in his slides, which means the powerpoint was too large for me to put on git, so it is in parts.  If you want to combine the files and compress into a single powerpoint, please do!
+
+[Slides.]("slides/past_present_future_obj_det_intro.pptx")
+[Slides.]("slides/past_present_future_obj_det_mask_rcnn1.pptx")
+[Slides.]("slides/past_present_future_obj_det_mask_rcnn2.pptx")
+[Slides.]("slides/past_present_future_obj_det_future.pptx")
+[Slides.]("slides/past_present_future_obj_det_questions.pptx")
+
+
 ## Igor Mordatch: Emergence of Grounded Compositional Language in Multi-Agent Populations
 
 ### Abstract
