@@ -220,7 +220,7 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       </li>
       </ul>
       </td>
-      <td>href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#matthew-johnson-composing-graphical-models-and-neural-networks-for-structured-representations-and-fast-inference">Matthew Johnson: Composing graphical models and neural networks for structured representations and fast inference
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#matthew-johnson-composing-graphical-models-and-neural-networks-for-structured-representations-and-fast-inference">Matthew Johnson: Composing graphical models and neural networks for structured representations and fast inference</a>
       </td>
       <td></td>
     </tr>
