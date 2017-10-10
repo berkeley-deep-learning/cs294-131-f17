@@ -87,6 +87,12 @@ With the ending of Moore's Law, many computer architects believe that major impr
 
 David Patterson is likely best-known for the book Computer Architecture: A Quantitative Approach written with John Hennessy or for Berkeley research projects Reduced Instruction Set Computers (RISC), Redundant Arrays of Inexpensive Disks (RAID), and Network of Workstations. He also served as Berkeley’s CS Division Chair, the Computing Research Association Chair, and President of the Association for Computing Machinery. This led to election to the National Academy of Engineering, the National Academy of Sciences, and the Silicon Valley Engineering Hall of Fame. He received the Berkeley Citation in 2016 after 40 years as a CS professor. He then joined the Google Brain as a distinguished engineer and serves as Vice-Chair of the Board of Directors of the RISC-V Foundation, an open architecture organization.
 
+### Matthew Johnson: Composing graphical models and neural networks for structured representations and fast inference
+
+## Abstract
+
+I'll discuss some recent ideas in generative modeling and approximate inference that combine the flexibility of deep learning with the efficient and interpretable representations of probabilistic graphical models. In particular, I'll focus on structured variational autoencoder (SVAE) methods, which augment latent exponential family graphical model structure, like Gaussian mixture models or switching linear dynamical systems, with neural network observation likelihoods. To enable fast inference, SVAEs leverage graph-structured approximating distributions and, building on variational autoencoders, fit recognition networks that learn to approximate difficult graph potentials with conjugate ones. I'll show how SVAE methods can be applied to learn how to parse mouse behavior from depth video.
+
 ## Percy Liang: Fighting Black Boxes, Adversaries, and Bugs in Deep Learning
 
 ### Abstract
