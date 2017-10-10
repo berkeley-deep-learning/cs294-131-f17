@@ -205,7 +205,21 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
     <tr>
       <td>10/23</td>
       <td>Matthew Johnson</td>
-      <td>TBA</td>
+      <td>Main Reading:
+      <ul>
+      <li><a href="https://arxiv.org/abs/1603.06277">Composing graphical models with neural networks for structured representations and fast inference</a> by Johnson et al.
+      </li>
+      <li><a href="http://papers.nips.cc/paper/6430-linear-dynamical-neural-population-models-through-nonlinear-embeddings">Linear dynamical neural population models through nonlinear embeddings</a> by Gao et al.
+      </li>
+      </ul>
+      Background Reading:
+      <ul>
+      <li><a href="https://arxiv.org/abs/1609.09869">Structured Inference Networks for Nonlinear State Space Models</a> by Krishnan et al.
+      </li>
+      <li><a href="https://arxiv.org/abs/1703.04265">Conjugate-Computation Variational Inference : Converting Variational Inference in Non-Conjugate Models to Inferences in Conjugate Models</a> by Khan and Lin.
+      </li>
+      </ul>
+      </td>
       <td>TBA</td>
       <td></td>
     </tr>
