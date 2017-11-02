@@ -280,7 +280,7 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <td><a href="https://arxiv.org/abs/1703.05407">Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play</a> by S. Sukhbaatar et al.
       <a href="https://sites.google.com/view/drnet-paper/">Unsupervised Learning of Disentangled Representations from Video</a> by E. Dention and V. Birodkar.
       </td>
-      <td><a href="rob-fergus-intrinsic-motivation-and-unsupervised-learning">Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play and Unsupervised Learning of Disentangled Representations from Video</a></td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#rob-fergus-intrinsic-motivation-and-unsupervised-learning">Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play and Unsupervised Learning of Disentangled Representations from Video</a></td>
     </tr>
     <tr>
       <td>11/20</td>
