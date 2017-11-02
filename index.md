@@ -277,7 +277,6 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
     <tr>
       <td>11/13</td>
       <td>Rob Fergus</td>
-      <td>Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play/Unsupervised Learning of Disentangled Representations from Video</td>
       <td><a href="https://arxiv.org/abs/1703.05407">Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play</a> by S. Sukhbaatar et al.
       <a href="https://sites.google.com/view/drnet-paper/">Unsupervised Learning of Disentangled Representations from Video</a> by E. Dention and V. Birodkar.
       </td>
