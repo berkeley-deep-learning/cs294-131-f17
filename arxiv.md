@@ -266,8 +266,22 @@ DropoutDAgger achieves the safety of behavioral cloning (which is safer than DAg
 
 **Suitable Readers**: Those who are interested in accessible, powerful reinforcement learning techniques. This is relatively simple to implement with minimal background in the field.
 
+### Feature Engineering for Predictive Modeling using Reinforcement Learning
 
+**Authors**: Udayan Khurana, Horst Samulowitz, Deepak Turaga
 
+**Arxiv Link**:  https://arxiv.org/pdf/1709.07150.pdf
 
+**Published On**:  September 21, 2017
+
+**Executive Summary**: The majority of ML algorithms deal well with feature selection, but for the most of predictive analytics simple feature selection isn’t sufficient. When data model is more complicated, feature engineering (FE) is required.  Feature engineering is a manual process that is done through trial and error. The process is not scalable nor efficient and is prone to bias and error, and this porcess should be automated.  Some challenges of this problem are: the number of possible features is unbounded (transformations can be applied repeatedly) and to perform exploration of the features automatically, there must be some estimation of effectiveness of a transformations based on prior experience.
+
+**Notable Details**:  
+
+* Transformation Graph: a DAG of all possible transformation where D0 is the initial dataset or a dataset derived from it through transformation path. Periodically combine nodes as union set of different transformations of the features.  
+* Graph Exploration under a Budget Constraint: since exhaustive exploration is not an option, there is a need of limited time budget constraint.
+* Traversal Policy Learning: Consider the graph exploration process as a Markov Decision Process. 
+
+The transformations improved the final gain in performance by about 51%, measured on the 48 datasets. 
 
 
