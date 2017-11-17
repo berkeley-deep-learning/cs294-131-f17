@@ -299,3 +299,54 @@ While averaging over several runs and publishing the implementation with the pap
 
 **Suitable Readers**: Those having basic familiarity with deep RL and a desire to understand how specific design choices affect experimental results.
 
+## Arxiv Summaries 10/22
+
+### Image similarity using Deep CNN and Curriculum Learning
+
+**Authors**:  Srikar Appalaraju, Vineet Chaoji
+
+**Arxiv Link**:  https://arxiv.org/pdf/1707.00683.pdf
+
+**Published On**:  September 26, 2017
+
+**Executive Summary**:  In order to train an effective image similarity model, the authors were interested in generating a feature embedding which optimizes a distance metric such that similar images (of the same class) are within a margin and dissimilar images are outside a margin. The combine previously developed Siamese architecture with a curriculum learning framework. Curriculum learning is about ordering training examples such that “easier” examples are presented before “harder” examples. Testing on CIFAR-10, they were able to achieve an 18% improvement in similarity predictions with curriculum learning over random pairing. Curriculum learning improves training speed given that most random pairs of images are not useful for learning a good embedding (e.g most embeddings will have an easier time predicting between cars and humans as opposed to cars and trucks).
+
+**Notable Details**: The Siamese net was built from 3 CNN. CNN1 was VGG-16 which was trained to capture the strong invariance associated with image classification. CNN2 and CNN3 are shallow networks (3 conv layer deep) that operate on downsampled images and is trained independently from CNN1. Since they are shallow, they will encode visual appearance features as opposed to class invariance that deep layers have. The output of these networks are used to construct a 4096-D feature embedding. 
+
+The motivation for curriculum learning is based on child development psychology which shows that children and animals learn faster when presented easier images before showing harder examples. 
+
+In order to achieve the curriculum learning aspect, the authors implemented pair constraints. At a given stage, the pair constraints filtered data such that hard positives had a maximum distance and hard negatives had a minimum distance. As training progresses, the constraint relaxes. The positive pairs distance increases (resulting in farther and farther similar images) and the minimum pairs distance decreases (images which are dissimilar look more similar). The authors found that constructing pair constraints with L2-distance over image pixels had the best performance.
+
+If hard negatives that were presented too early in the training procedure the network would converge to a bad minima. Therefore picking a -descent rate for the pair constraint was crucial to observing the 18% accuracy gain. Accuracy was computed by asking the network to compute pairs of embeddings and threshold the L2-distance. Random pairing achieved 78% accuracy, but with curriculum learning, the network was able to achieve 92.6% in the same amount of time.
+
+### DeepVO: Towards End-to-End Visual Odometry with Deep Recurrent Convolutional Neural Networks
+**Authors**:  Sen Wang, Ronald Clark, Hongkai Wen and Niki Trigoni
+**Arxiv Link**:  https://arxiv.org/pdf/1709.08429.pdf
+**Published on Arxiv**: September 25, 2017
+
+**Executive Summary**: This paper studies monocular visual odometry (VO) problem. Most VO algorithms are developed using feature extraction, matching, motion estimation, local optimisation, etc. They are thus also accompanied by the need for careful fine-tuning by an expert to work well in different environments. This paper presents an end-to-end framework called Recurrent Convolutional Neural Networks (RCNNs). Being end to end, this method doesn’t need any specific processing that are common in traditional VO algorithms.  Extensive experiments on the KITTI VO dataset show competitive performance to state-of-the-art methods, verifying that the end-to-end Deep Learning technique can be a viable complement to the traditional VO systems.
+**Notable Details**: 
+* They provide the first ever end-to-end solution to the problem of VO in a way that does not need any processing pipeline like feature extraction, motion estimation etc ( not even camera calibration is required)
+* Propose a new deep architecture called Recurrent Convolutional Neural Networks that enable it to learn complex motion dynamics in a sequence of images which is hard even for humans.
+
+Architecture: Instead of using popular CNNs  such as VGGNet, GoogLeNet they propose a new architecture. The claim is that the existing architectures are designed for classification and detection problems in mind, which means that they are trained to learn knowledge from appearance and image context. However VO which is rooted in geometry should not be closely coupled with appearance. Thus, a framework which can learn geometric feature representations is of importance to address the VO and other geometric problems. It takes a video clip or a monocular image sequence as input. At each time step, two consecutive images are stacked together to form a tensor for the deep RCNN to learn how to extract motion information and estimate poses. The image tensor is fed into the CNN to produce an effective feature for the monocular VO, which is then passed through a RNN for sequential learning. 
+Loss Function: The proposed RCNN based VO system can be considered to compute the conditional probability of the poses Yt = (y1 , . . . , yt ) given a sequence of monocular RGB images Xt = (x1, . . . , xt) up to time t in the probabilistic perspective. To learn the hyperparameters θ of the DNNs, the Euclidean distance between the ground truth pose (pk , ϕk ) at time k and its estimated one (^pk , ^ϕk ) is minimised. 
+
+Among all the 11 training dataset, only a single one has velocities that are higher than 60 km/h. Also, the images are captured at only 10 Hz, which makes the VO estimation more challenging during fast movement. The large open area around highway (lacking of features) and dynamic moving objects can degrade the accuracy as well. Conventional geometry based methods could increase feature matching and introduce outlier rejection, such as RANSAC. However, for the DL based method, it is unclear how to embed these techniques yet. A feasible solution is to train the network with more data which not only reflects these situations but also is deliberatively augmented with noise, outliers, etc., allowing the network itself to figure out how to deal with these problems.
+
+### Machine Learning Models that Remember Too Much
+**Authors**:  C. Song, T. Ristenpart, V. Shmatikov
+**Arxiv Link**:  https://arxiv.org/pdf/1709.07886.pdf
+**Published on Arxiv**: September 22, 2017
+
+**Executive Summary**: As "machine learning as a service" (MLaaS) platforms gain more traction among non-experts, ML providers can take advantage of users, particularly by gaining access to sensitive training data. While ML providers are often restricted from direct access to training data, this paper demonstrates a method by which an adversarial provider can take advantage of overprovisioning to create a model which silently memorizes information about the training data without compromising testing accuracy, and allows the adversary to later extract the memorized information from the customer's model in both white-box and black-box settings. With this, the authors expose a large class of security hazards inherent to MLaaS platforms which hide the model's training algorithms from users, and demonstrate the need for a more rigorous treatment of privacy in this setting.
+
+**Notable Details**: An adversarial provider A supplies the training algorithm to the data holder, and does not observe the execution of the algorithm. After training, A obtains white/black box access to the model.
+
+White box setting: The LSB encoding attack calls for the training algorithm to directly post-process model parameters θ by setting the lower b bits of each parameter to a bit string s extracted from the training data; A may then access θ to extract the bits of s after model training. A second attack adds a malicious “regularization” term C =  -|Pearson correlation coefficient(θ, s)| to the loss function, driving the gradient direction towards a local minimum where s and θ are highly correlated. The last attack adds a term P to the loss function forcing the model to encode sensitive information in the signs of the parameters, penalizing each parameter with a sign that does not match the encoding of s. 
+
+Black box setting: An algorithm resembling data augmentation is used to train model Mθ on two tasks: the original classification task, as well as a requirement that, for a particular synthetic input i and secret information d, Mθ(i) = d. This technique forces the model to become overfitted to the labels of a relatively small number of synthetic inputs; due to the large expressive capacity of neural networks, this overfitting can be achieved without significant impact on the model's performance on the rest of the input space. 
+
+Attacks were highly effective on CIFAR10, Labeled Faces in the Wild, FaceScrub, 20 Newsgroups, and IMDB datasets, and with model architectures including CNNs and Residual Networks; white box attack on a text classifier can leak 70% of a training corpus without loss of accuracy, and black box attack on a classifier from FaceScrub data allows full recovery of 17 images through leakage of 1 bit per query. 
+The findings are of interest to non-experts in ML who rely on MLaaS platforms to model sensitive data, as well as to researchers at the intersection of security and deep learning. While countermeasures (examining the distribution of parameters; adding noise to low bits of parameters) are effective against specific attacks, the work exposes a fundamental security hazard in the MLaaS paradigm; users with sensitive data should avoid any platform providing a training algorithm not thoroughly understood and examined by the user. Questions of how to define and test the requirement that a model stores only the information required for the task at hand, rather than encoding extraneous information, remain open.
+
