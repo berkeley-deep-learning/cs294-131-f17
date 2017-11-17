@@ -193,6 +193,12 @@ Those interested in data augmentation techniques or those wishing to get a littl
 
 ### A Deep Generative Framework for Paraphrase Generation
 
+**Authors**: Ankush Gupta, Arvind Agarwal, Prawaan Singh, Piyush Rai
+
+**Arxiv Link**: https://arxiv.org/pdf/1709.05074.pdf
+
+**Published On**: September, 150 2017
+
 **Executive Summary**: The authors open the article by emphasizing the importance of paraphrasing (i.e., generate a sentence with similar semantic structure given the original sentence) in the context of Q&A, information retrieval, conversational agents, etc. However, due to the complex nature of the task, the problem suffers from the lack of training data, compelling the authors to leverage semi-supervised learning.
 
 **Notable Details**:  The proposed methodology is as follows:
@@ -203,5 +209,65 @@ Those interested in data augmentation techniques or those wishing to get a littl
 The parameters in the model are learned in two distinct phases. First, auto-encoding capability is learned by training on (sentence, sentence) examples (unsupervised). Then, paraphrasing capability is learned by training on (sentence, paraphrase) examples (supervised). Once trained, the model is able to produce multiple paraphrases with beam-search  procedure.
 
 Quantitatively (i.e., BLEU, METEOR, and TER score), the model beats state-of-the-art baselines on the MSCOCO dataset, but only reports against trivial baselines on the recently-released Quora paraphrasing dataset . Qualitatively, the authors claim the model produces paraphrases with similar relevance and readability scores as to ground truth, however they do not report the qualitative evaluations of their baselines to compare against.
+
+### Exploring Human-like Attention Supervision in Visual Question Answering
+
+**Authors**: Tingting Qiao, Jianfeng Dong, Duanqing Xu
+
+**Arxiv Link**: https://arxiv.org/abs/1709.0630
+
+**Published On**: September 19, 2017
+
+**Executive Summary**: Attention mechanisms in Neural Nets often don’t attend over the same areas humans would. Errors in attention distributions will often lead to incorrect outcomes, for example failure to detect specific objects. Traditionally, attention mechanisms are only optimized indirectly. This paper uses the VQA-HAT (Visual Question Answering Human ATtention) Dataset. For each image, three annotators were given a blurred image and a pixel budget to unblur; their allocation of pixels is the “human attention.” A CNN on the image and a GRU on the question then generate a sequence of predicted attention distributions explicitly. Then a second GRU takes in this sequence of distributions and explicitly predicts the question answer. 
+
+**Notable Details**: Unsurprisingly, correlation to human attention outperforms any other model, and even slightly outperforms human (since the model has lower variance than a single annotator). Comparing supervised attention to unsupervised attention on VQA 2.0, the authors noted a .15% increase in overall performance, and a .42% increase in counting problems.
+
+**Suitable Readers**: Anyone interested in attention or computer vision, and especially visual question answering.
+
+### Mitigating Evasion Attacks to Deep Neural Networks via Region-based Classification
+
+**Authurs**: Xiaoyu Cao, Neil Zhenqiang Gong
+
+**Arxiv Link**: https://arxiv.org/pdf/1709.05583.pdf
+
+**Published On**:  September 17, 2017
+
+**Executive Summary**: Recent studies show that deep neural networks are vulnerable to adversarial examples; that is, given a test sample, an attacker can add a small carefully crafted noise to it, so that this example is wrongly predicted by the DNN classifier. The authors find that using existing adversarial example generation methods, the generated adversarial examples are close to the classification boundary. Therefore, they propose a new defense strategy, called region-based classification. Specifically, traditional classifiers make predictions based on the input alone. In contrast, a region-based classifier makes predictions for a set of samples centered at the input example, then selects the most frequently predicted label as the final prediction.
+
+**Notable Details**: They evaluate their defense proposal on MNIST and CIFAR-10 datasets. They use CW attack to generate adversarial examples, which is the state-of-the-art approach.
+
+* First, they assume that the adversary has full knowledge of the model architecture and parameters, but does not know that the model uses region-based classification method. Their results show that on MNIST, the attack success rate drops from 100% to at most 16%, while on CIFAR-10, it drops from 100% to at most 7%. 
+
+* Further, they assume a stronger adversary, who not only has full knowledge of the model, but also knows that the model is using region-based classification. In this case, the adversary can increase the magnitude of the noise added to the original image, so that it is moved further away from the classification boundary. The results show that when the adversary doubles the magnitude of the noise, the attack success rate is around 60% for both MNIST and CIFAR-10 datasets. 
+
+* In addition, the model’s accuracy on original test set does not drop.
+
+**Suitable Readers**: Those who are interested in adversarial deep learning, in particular, who are working on generating adversarial examples for deep neural networks and developing defense strategies against adversarial examples.
+
+### DropoutDAgger: A Bayesian Approach to Safe Imitation Learning
+
+**Authors**: Kunal Menda, Katherine Driggs-Campbell, and Mykel J. Kochenderfer
+
+**Arxiv Link**: https://arxiv.org/abs/1709.06166
+
+**Published On**: September 18, 2017
+
+**Executive Summary**: In reinforcement learning (RL), we’re concerned with teaching an agent (any trainable actor) to take optimal or near-optimal actions in an environment (world) that is associated with some enumerable state. Each state-action pair is associated with a reward that the agent seeks to maximize. Often, a simple but effective method for training an agent in an environment E is to replicate the behavior of an expert that already functions near optimally in E. This technique is called behavioral cloning, and it’s part of a set of algorithms referred to as imitation learning algorithms. Beyond copying the expert, we can enhance behavioral cloning by allowing the expert to observe the agent’s behavior and provide corrections. The algorithm associated with this general procedure is called DAgger. DAgger works very well in simulated environments; however, agents that are training with DAgger in real world environments may venture into unsafe conditions  (i.e. an autonomous vehicle on the edge of a cliff, a drone headed directly toward a tree, etc) if they fail to perfectly replicate an expert or are exposed to a novel state. DropoutDAgger attempts to  address this problem.
+
+**Notable Details**: For an agent in state  within an environment E, the authors propose to attempt to estimate the uncertainty of the action  that the agent intends to take. Assuming that a is produced by a deep neural network with input s, the proposal makes use of the following method to obtain a larger distribution of potential actions:
+
+* Apply a random dropout filter to each weight layer of the neural network
+* Evaluate the neural network on s to produce an action a-i
+* Add a-i to the potential action distribution and go to step 1
+
+After obtaining a Gaussian distribution of N actions via this dropout technique, the mean  is then computed. The method then considers the action that the expert would take in state s, denoted, . If the Euclidean distance between m and  falls below some threshold T, then the agent’s original action a is deemed safe and is taken . Otherwise,  is taken. This algorithm is called DropoutDAgger.
+
+DropoutDAgger achieves the safety of behavioral cloning (which is safer than DAgger in real world environments) while achieving comparable rewards to DAgger (which achieves better rewards than behavioral cloning).
+
+**Suitable Readers**: Those who are interested in accessible, powerful reinforcement learning techniques. This is relatively simple to implement with minimal background in the field.
+
+
+
+
 
 
