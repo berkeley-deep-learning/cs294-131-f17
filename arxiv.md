@@ -284,4 +284,18 @@ DropoutDAgger achieves the safety of behavioral cloning (which is safer than DAg
 
 The transformations improved the final gain in performance by about 51%, measured on the 48 datasets. 
 
+## Deep Reinforcement Learning that Matters
+
+**Authors**: Peter Henderson, Riashat Islam, Philip Bachman, Joelle Pineau, Doina Precup, David Meger
+
+**Arxiv Link**:  https://arxiv.org/abs/1709.06560
+
+**Published On**:  September 19,2017
+
+**Executive Summary**: Recent results in deep reinforcement learning (RL) are difficult to replicate due to high sensitivity to details of implementation, hyperparameters, and benchmark environment. This paper provides empirical demonstration of the effects of several variables on the performance of several RL algorithms. With the goal of keeping RL relevant, it concludes by proposing methods by which new algorithms may be fairly evaluated.
+
+**Notable Details**: The particulars of the environment, the RL algorithm, and specific interactions between the two create challenges when attempting to evaluate new algorithms: For a fixed learning algorithm on a particular benchmark task, a small modification such as using ReLU instead of Tanh activations can boost final reward by 5x. The difficulty of discovering the best hyperparameters for a particular algorithm and environment complicates comparison with baselines and motivates the need for hyperparameter-free learning algorithms. Moreover, several state-of-the-art algorithms demonstrate remarkably dissimilar results on different benchmarks for reasons ranging from finding local optima (read: cheats) to the scale of rewards. This finding necessitates comparing algorithms across a diverse set of benchmarks. It also raises the question of whether reward (as opposed to real-world performance) is truly a valid measure of success. However, even when the task, model, and algorithm are held constant, statistically significant changes in performance may be derived by simply varying the random seed.
+While averaging over several runs and publishing the implementation with the paper, maintaining the rapid growth of RL will require reevaluating the reproducibility of results.
+
+**Suitable Readers**: Those having basic familiarity with deep RL and a desire to understand how specific design choices affect experimental results.
 
