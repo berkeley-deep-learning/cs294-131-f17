@@ -481,4 +481,67 @@ Since there was no large-scale emotionally labeled dataset available, they train
 
 Their model is an GRU encoder-decoder system with attention. To incorporate emotion, they keep emotion embeddings that they pass through to the decoder with the encoder outputs and the encoder attention.
 
+## Arxiv Summaries 10/16
 
+###How Much Chemistry Does a Deep Neural Network Need to Know to Make Accurate Predictions
+
+**Authors**: Garrett B. Goh, Charles Siegel, Abhinav Vishnu, Nathan O. Hodas, Nathan Baker
+
+**Arxiv Link**: https://arxiv.org/abs/1710.02238
+
+**Arxiv Published Date**: 5 Oct 2017
+
+**Executive Summary**: Goh et al. described “Chemception,” a CNN based system that predicts chemical properties from molecular drawings. This work improves on the system by adding basic chemical information like atomic number, valence electrons, and partial charge. This work also describes experiments in which the authors tested Chemception with reduced or augmented inputs, uncovering information on learning patterns in predicting toxicity/activity and compares them to current knowledge in chemistry. The authors found that the additional basic chemical information improved Chemception’s predictions and that the system was learning to perform tasks in line with the current established practices.
+
+**Notable Details**: Chemistry data sets are expensive and time-consuming to build, leading to the idea that providing chemistry basics to Chemception would allow it to spend its learning capacity on more sophisticated representations. In toxicity and activity prediction, Chemception does not outperform other systems that require substantial pre-requisite chemical knowledge, but it does very well considering it doesn’t need anything beyond basic chemistry concepts. In free energy of solvation, Chemception achieves state of the art performance and comes very close to the gold standard of accuracy. 
+Suitable Readers: Those who are interested in chemistry, toxicology, and applied computer vision.
+
+### Face Sketch Matching via Coupled Deep Transform Learning
+
+**Authors**: Shruti Nagpal, Maneet Singh, Richa Singh, Mayank Vatsa, Afzel Noore, Angshul Majumdar
+
+**Arxiv Link**: https://arxiv.org/abs/1710.02914
+
+**Arxiv Published Date**: 9 Oct 2017
+
+
+**Executive Summary**: Nagal et al. introduced the first deep transform learning framework for extracting domain invariant representation of inputs. Their learning framework, DeepTransformer consists of two layers. The first layer learns a low-level feature representation of the input, these low-level features are then passed onto the second layer that learns a high-level feature representation and a mapping from the input domain to a desire domain. They also presented a second variant of the framework that learns two mappings from and to the desired domain instead. The authors used neural-network based architecture for the layers in their framework, but hand-crafted feature extractors and classifiers can also be used in place of the neural-network based architecture.
+
+They evaluated their approach on sketch-to-digital-photo matching and sketch-to-sketch matching for law enforcement applications. Their model outperforms state-of-the-art sketch matching algorithms and a commercial face recognition system.
+
+**Notable Details**: DeepTransformer can use existing (both neural-based or hand-crafted) feature extractors and classifiers in place their proposed learning networks. The overall performance on both sketch-to-sketch and sketch-to-image matching tasks depends on the feature extractor, but using their learning framework outperforms other learning frameworks on the same learning tasks using the same feature extractor. 
+
+They also presented the first publicly available dataset containing multiple age-separated digital photos for a given sketch image. They train models on this dataset that contains matching photos that were taken from younger, same and older image than the time the sketch was produced. Unsuprisingly, their model achieves the best performance when sketches produced at the same age as the digital photos of the same subjects.
+
+
+**Suitable Readers**: Machine Learning Researchers interested in Domain Adaptation 
+
+### Efficient K-Shot Learning w/ Regularized Deep Networks
+
+**Authors**: Donghyun Yoo, Haoqi Fan, Vishnu Naresh Boddeti, Kris M. Kitani
+
+**Arxiv Link**: https://arxiv.org/abs/1710.02277
+
+**Arxiv Published Date**: 6 Oct 2017
+
+**Executive Summary**: Fine-tuning pretrained neural networks for small datasets is a common practice used today. However, the complexity of networks make it easy to overfit to the given data. One indication of overfitting is the occurrence of correlated filter responses from neurons in the network. The network proposed a way to group similar neurons together to act as regularization for the network.
+
+**Notable Details**:  As a form of regularization, the paper proposes to group correlated neurons together and apply a single backpropagation gradient through the entire group of neurons rather than having individual gradients per neuron. The paper trains the network to group neurons such that the difference between the activation response of neurons within a group are minimized and the resulting outputs of neurons of a group are orthogonal to other groups in the layer.
+
+To determine the optimal number of groups per layer in the network, an RL agent is used to search this space over an LSTM network that outputs the proposed groups per layer. The implementation of this RL agent on an LSTM network is almost identical to Zoph and Le’s architecture search.
+
+**Suitable Readers**: Those interested in k-shot learning and a unique method of regularization.
+
+### Natural-Gradient Stochastic Variational Inference for Non-Conjugate Structured Variational Autoencoder
+
+**Authors**: Wu Lin,  Mohammad Emtiyaz Khan, Nicolas Hubacher, Didrik Nielsen 
+
+**Arxiv Link**: https://arxiv.org/pdf/1603.06277.pdf
+
+**Arxiv Published Date**: 7 Jul 2017
+
+**Executive Summary**: This paper proposed a new method for amortized inference in graphical models that contain deep generative models. The method generalizes existing approaches to a larger class of models where the graphical model can contain non-conjugate components. Their main contribution was the proposal of structured recognition models that preserve the correlations between all local variables. For this general class of models, they derived a scalable inference method that employs natural-gradient updates and can be implemented by reusing existing software for graphical models and deep models.
+
+**Notable Details**:  In this paper, they proposed a method that generalizes the method of previous work to a larger class of models where the graphical model can contain non-conjugate components. Their main contribution is the proposal of structured recognition models that preserve the correlations between all local variables. For this general class of model, they also derived a scalable inference method that employs natural-gradient updates and can be implemented by reusing existing software for graphical models and deep models.
+
+**Suitable Readers**: Those who want to know further optimization of variational inference beyond the reading material.
