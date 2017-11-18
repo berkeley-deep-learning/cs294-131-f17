@@ -383,9 +383,9 @@ In addition to the adverserial feature-level domain adaptation (using domain adv
 A variant of batch normalization is introduced accounting for the fact that batch statistics differ significantly among simulated and real-world data. 
 The domain adaptation techniques are compared with scene randomization (changing camera pose, bin location, backgrounds and dynamical properties of the simulated objects) and it is shown that the proposed domain adaptation scheme significantly outperform naiive randomizatoin approaches.
 
-### Arxiv Summaries 10/17
+## Arxiv Summaries 10/09
 
-**Title**: Efficient K-Shot Learning with Regularized Deep Networks
+### Efficient K-Shot Learning with Regularized Deep Networks
 
 **Authors**: Donghyun Yoo , Haoqi Fan , Vishnu Naresh Boddeti , Kris M. Kitani
 **Arxiv Link**: https://arxiv.org/pdf/1710.02277.pdf
@@ -396,7 +396,7 @@ K-Shot Learning often suffers from severe overfitting on the training set due to
 	To find the optimal hyperparameters for their algorithm (threshold to group filters, number of groups, etc), they use a recurrent RL network. This approach is similar to Quoc Le and Barret Zoph’s work from 9/25’s talk. The loss for grouping is the L2 norm for minimizing inter-group filter output distance and maximizing intra-group filter output distance.
 	Experiments were run on the Office data set introduced by Saenko et al. 2010. This dataset has 31 classes and 20 examples per class of a common office setting. Grouping Neurons by Activations (GNA) improve performance from fine-tuning by almost 10% (from 70.07% to 79.94%). Further optimizing with their RL hyperparameter search sees another 5% increase to 85.04%.
 
-### Title: SE3-Pose-Nets: Structured Deep Dynamics Models for Visuomotor Planning and Control
+### SE3-Pose-Nets: Structured Deep Dynamics Models for Visuomotor Planning and Control
 
 **Authors**: Arunkumar Byravan, Felix Leeb, Franziska Meier and Dieter Fox
 **Arxiv Link**: https://arxiv.org/pdf/1710.00489.pdf 
