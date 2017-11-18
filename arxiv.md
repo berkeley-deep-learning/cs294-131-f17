@@ -299,7 +299,7 @@ While averaging over several runs and publishing the implementation with the pap
 
 **Suitable Readers**: Those having basic familiarity with deep RL and a desire to understand how specific design choices affect experimental results.
 
-## Arxiv Summaries 10/22
+## Arxiv Summaries 10/02
 
 ### Image similarity using Deep CNN and Curriculum Learning
 
@@ -382,4 +382,103 @@ The surprising effect makes the attempt fail to replace the inefficient BN metho
 In addition to the adverserial feature-level domain adaptation (using domain adverserial neural networks DANN) a feature matching loss between the activations of the last convolutional layer of the grasp prediction network is used since it provides more gradient information than the binary labels.
 A variant of batch normalization is introduced accounting for the fact that batch statistics differ significantly among simulated and real-world data. 
 The domain adaptation techniques are compared with scene randomization (changing camera pose, bin location, backgrounds and dynamical properties of the simulated objects) and it is shown that the proposed domain adaptation scheme significantly outperform naiive randomizatoin approaches.
+
+### Arxiv Summaries 10/17
+
+**Title**: Efficient K-Shot Learning with Regularized Deep Networks
+
+**Authors**: Donghyun Yoo , Haoqi Fan , Vishnu Naresh Boddeti , Kris M. Kitani
+**Arxiv Link**: https://arxiv.org/pdf/1710.02277.pdf
+**Published Date**: October 6th, 2017. 
+
+K-Shot Learning often suffers from severe overfitting on the training set due to the large number of parameters in deep networks. The standard procedure for K-shot learning is to train a regular convolutional neural network on a large dataset such as ImageNet so the convolutional layers can learn filters. Then, the last layer or last few layers are re-initialized and trained on the smaller dataset. Efficient K-Shot Learning with Regularized Deep Networks aims to solve the problem of overfitting by regularizing back-propagated gradients.  
+	For each convolutional filter that is learned, there are often several filters per layer that share a similar structure. The authors of this paper propose that these subtle differences in filters are responsible for a large part of overfitting. Their work groups similar filters by their outputs on the training set, and apply the average of all the group’s gradients to each filter in the group. This is the “regularization” technique they propose.
+	To find the optimal hyperparameters for their algorithm (threshold to group filters, number of groups, etc), they use a recurrent RL network. This approach is similar to Quoc Le and Barret Zoph’s work from 9/25’s talk. The loss for grouping is the L2 norm for minimizing inter-group filter output distance and maximizing intra-group filter output distance.
+	Experiments were run on the Office data set introduced by Saenko et al. 2010. This dataset has 31 classes and 20 examples per class of a common office setting. Grouping Neurons by Activations (GNA) improve performance from fine-tuning by almost 10% (from 70.07% to 79.94%). Further optimizing with their RL hyperparameter search sees another 5% increase to 85.04%.
+
+### Title: SE3-Pose-Nets: Structured Deep Dynamics Models for Visuomotor Planning and Control
+
+**Authors**: Arunkumar Byravan, Felix Leeb, Franziska Meier and Dieter Fox
+**Arxiv Link**: https://arxiv.org/pdf/1710.00489.pdf 
+**Published Date**: Oct.2 2017
+
+**Executive Summary**:  This paper is an extension of the SE3-Net paper from the same lab. While the old SE3-Net only allows learning of robot kinematics from point clouds, this paper extends the previous model by using a pre-trained network for visuomotor control. Deep learning models typically strives to find a low-dimensional, noise-free representation of the high-dimensional data (e.g. picture/voice recognition), and this paper makes use of the advantage that in Robotics, the low-dimensional representation is actually fixed: it’s just the kinematics of all joints defined as SE3 rigid body transforms. Therefore, the learned low-dimensional representation is human-interpretable and the training process is a lot easier. The experiment proved that the network is capable of moving from any initial joint position to the final state (given by a 3D point cloud) with state-of-the-art precision, even with minimal supervision. 
+
+**Notable Details**:  Unlike most deep-learning models, the SE3-Pose-Net learns the point mask and SE3 rigid body kinematics of the robot as the intermediate result, and the last part of the pipeline is simply applying the rigid body transform using the known dynamics. The encoder and decoder layers are also simple conv-pool and fully connected layers with no fancy yet computationally-heavy transforms, and the whole neural net is no larger than 20 layers in total, making it relatively efficient to train. Different from most “deep” learning methods that make heavy use of computation, the SE3-Pose-Net is simple both to train and to evaluate.
+
+Another notable detail about the paper is that it uses a pre-trained SE3-Pose-Net for actual control of the robotics. Given a desired joint position, it uses a gradient-based approach to calculate the action achieved to move from the current to final state. It then uses an iterative method to update its calculations. As claimed by the author, even when the neural net is trained with minimal supervision, it still performs only slightly worse than other approaches with full knowledge about the robot. As a limitation though, the experiment on the real robot only applies to the first 4 joints, and it’s yet unknown what would happen if we use all joints.
+
+This paper is using the “modern” deep-learning based approach to solve a traditional robotics problem, and might shed light on some unsolved problem in reinforcement learning / robot manipulation. It’s more like a “fusion” between deep learning and robotics and reading it does require some background in basic robotics. On the other hand, in its effort to minimize calculation, it does not spend a lot of effort in using complicated architectures. Therefore, it’s more suitable for the robotics/reinforcement learning community.
+
+### Strengths and Weaknesses of Deep Learning Models for Face Recognition Against Image Degradations
+
+**Authors**: Klemen Grm, Vitomir Struc, Anais Artiges, Matthieu Caron, Hazim Kemal Ekenel
+**Arxiv Link**: https://arxiv.org/pdf/1710.01494.pdf
+**Published Date**: October 4th, 2017. 
+
+In this paper, the authors performed tested changes in image processing network performance across a wide survey of image degradation methods. In particular, they tested AlexNet, GoogLeNet, VGG-Face and SqueezeNet on 6 different methods: gaussian blur, gaussian noise, salt-pepper noise, contrast, brightness and JPG compression. 
+	Their methodology was as follows. The networks were trained on the VGG-Face dataset in order to perform facial recognition. Each subject had 1000 copies in the dataset. Afterward, the models were tested on faces from the Labeled Faces in the Wild dataset (LFW). These pictures had the image degradations performed on them. In addition to these image covariates, the team also performed comparisons in which they modified the models. They did this in 2 ways: changing the number of image samples fed to the model and comparing performance depending on color or grayscale images were used. 
+	Overall, the team found results that are quite plausible and realistic. The performance of all models dropped reliably when the image degradation became more pronounced. However, depending on which image covariate was being analyzed, different models would respond more sensitively to the changes, creating a noticeable gap in performance between models at certain thresholds. In addition, for some image covariates, the drop in performance is more dramatic and then plateaus, compared to others in which it seems to steadily decline. The researchers found that the model covariates did not seem to affect performance in a noticeable way. 
+	This research, while not presenting a new model or framework for image processing, plays an important part in the overall science of deep learning research. In order to build a rigorous framework for why deep learning has its successes and pitfalls, we need to gather data like that of this paper. It is only from this can we ask why certain techniques are more vulnerable or robust to noise and perhaps find underlying truths in deep learning. 
+
+### Learning to Segment Human by Watching YouTube
+
+**Authors**: Xiaodan Liang, Yunchao Wei, Liang Lin, Yunpeng Chen, Xiaohui Shen, Jianchao Yang, Shuicheng Yan
+**Arxiv Link**: https://arxiv.org/pdf/1710.01457.pdf
+**Published Date**: Oct. 4 2017
+
+**Summary**:  The goal of this paper is to train a CNN model that generates a segmentation mask of the human in an input image. This paper provides supervision to this model by first generating a crude segmentation mask for frames of Youtube videos with a pretrained “imperfect” human detector. Unsupervised methods are used to decompose the videos into superpixels and supervoxels (superpixel over time). The crude mask from the pretrained detector is used along with the segmentation mask predicted by the currently trained CNN to assign unary energies to superpixels, so that graph optimization techniques could be used to generate a refined segmentation mask from the noisy input segmentation masks. The CNN is then uses the refined segmentation mask for supervision, and improvement in the CNN model will eventually make unary energies more accurate, which results in improvement in the supervision mask, and etc.
+
+**Notable Details**:  This paper’s very weakly supervised method, which trains on Youtube data and uses a pretrained human detector for mask initialization, is comparable to or outperforms many previously fully supervised methods that trains on pixel-level labels of segmentation. It is also notable that with some supervision, the model’s performance improves significantly. i.e. training with labeled segmentation masks as semi-supervision performs better than using the human detector (which was trained on annotated bounding boxes).
+
+A notable detail is that this model is a binary model and only segments into two classes (i.e. human and non-human). This may explain in part the strong performance of the method. It might be interesting to see the authors extend their technique to create a multi-class method.
+
+The authors mentioned that their model takes two days to train and 2 seconds to test. Since this method is iterative and may take somewhere around 10 alternations between graph and CNN optimization, it would have been informative for the author to compare the runtime performance of previous models with their proposed method. 
+
+
+### Dense RGB-D semantic mapping with Pixel-Voxel neural network
+
+
+**Authors**: Cheng Zhao, Li Sun, Pulak Purkait, and Rustam Stolkin
+**Arxiv Link**: https://arxiv.org/pdf/1710.00132.pdf
+**Published Date**: October 4th, 2017. 
+
+Previous approaches to 3D semantic segmentation typically use models to construct the 3D map and perform scene understanding separately and then afterwards fusing the results with equal weights.
+The goal of this paper is to use both RGB images and point cloud data together to produce a 3D semantic mapping. The authors propose a Pixel-Voxel network which will take both types of input and allows for utilizing the global context information from PixelNet in conjunction with the local shape information from VoxelNet. Combined with a softmax weighted fusion stack that can learn how much confidence to have either model, this model achieves state-of-the-art results.
+The softmax weighted fusion stack is a key part of the success of the model and is also highly flexible. It can take any number of input models to be fused and can be used into any network for fusion style learning, always learning how much contribution to allocate to each model for every combination of situation and categories.
+The runtime performance for this model is 5-6 Hz when using QuadHD data, which is almost enough to satisfy real time dense 3D semantic mapping. This can be boosted to up to 12 Hz by using half scale data. 
+
+
+### Early Turn-taking Prediction with Spiking Neural Networks for Human Robot Collaboration
+
+**Authors**: Tian Zhou and Juan P. Wachs
+**Arxiv Link**: https://arxiv.org/pdf/1709.09276.pdf
+**Published Date**: September 28th, 2017. 
+
+Communication is a requirement for efficient teamwork. Often times when humans coordinate every human is aware of the others’  intentions and context of the others and will use this information when deciding when performing tasks. This paper proposes a model called the Cognitive Turn-taking Model (CTTM) to try and guess the human’s intentions while he is making them and make accurate predictions before the gesture is complete. In this manner we can build much more responsive robots as they can start their actions earlier.
+In their CCTM, they incorporate Spiking Neural Networks (SNN). To try to better simulate how human brains work. SNNs are a more realistic simulation of neurons than traditional neural networks. Unlike traditional neural nets, where each neuron in a given activation layer activates at the same time, SNNs activate whenever their “membrane potential” (essentially the activation threshold) reaches a certain potential. Additionally, unlike traditional neural networks where the activations are modeled as discrete time steps with well defined functions, the activations of SNNs are typically described by differential equations (typically 2nd order diff eqs.).
+In their experiments they took a human doing a mock surgery and at various points the human did turn-taking cues (i.e., pass the scalpel). For testing, they used the F1 score at various stages of the human’s motions. Performs better than previous ways of modeling this (dynamic time warping, ishii), but still performs worse than humans.
+
+###  Detecting Adversarial Attacks on Neural Network Policies with Visual Foresight
+**Authors**:  Yen-Chen Lin, Ming-Yu Liu, Min Sun, Jia-Bin Huang
+
+**Arxiv Link**: https://arxiv.org/abs/1710.00814v1 
+**Published Date**: Mon, 2 Oct 2017
+
+Deep reinforcement learning is an effective way to learn complex policies in robotics, video games and many other tasks. However, just like modern deep neural networks, these algorithms are susceptible to adversarial attacks. That is to say: malicious actors can perturb inputs to the algorithm in order to alter the outcome, and can do so intelligently. In deep learning, there are several defenses against this sort of attack (such as model distillation). However, there do not exist model agnostic defenses in deep reinforcement learning until now. Lin et al introduce a method to detect adversarial attacks in environments whose visual dynamics are well-known and predictable. 
+To do so, they introduce a “visual foresight” module (a one-step look ahead image-sequence prediction module), whose job is to predict the next reasonable observation, given state x_{1:t-1} and a_{1:t-1}. The sequence of states up to t-1, concatenated with the visual foresight frame is used to predict an action. At each step, this visual foresight module action is compared with the true action. If the difference is above some threshold, then we can be reasonably certain that an adversarial attack has taken place, and we are better off taking the action predicted by the visual foresight module, whose input has not been perturbed, and thus would allegedly act more reasonably than the true agent. 
+This defense is both model and attack agnostic, so can be used against any attack, from the “Fast Gradient Sign Method” to “Carlini Wagner.” The visual foresight module consists of an encoder, an actio-conditional transformation, and a decoder. The main benefit to this method is that instead of rejecting adversarially perturbed inputs, it can actually continue to act despite their presence. However, the method does require accurate modeling of the visual dynamics of the environment. Thus it works best on simple visual data, wherein we can easily predict the next frame given the current.
+
+### Emotional Chatting Machine: Emotional Conversation Generation with Internal and External Memory
+
+**Authors**: Hao Zhou, Minlie Huang, Tianyang Zhang, Xiaoyan Zhu, Bing Liu
+**Arxiv Link**: https://arxiv.org/pdf/1710.02277.pdf
+**Published Date**: October 3th, 2017. 
+
+Current chatbots don’t consider emotion in their responses. This paper is about an emotional chatting machine (ECM) that tries to make this happen by keeping track of emotion embeddings and feeding it into the decoder along with the encoder outputs. They get on average a .4/2 rating emotionally when tested manually when compared to the baseline that gets only .152/2. Since there is no baseline currently for this task, they used a generic seq2seq model that is the current state-of-the-art in chat generation. In terms of content, they matched the baseline which proved that they could keep the previous state of the art chat results standard while adding emotion to it.
+
+Since there was no large-scale emotionally labeled dataset available, they trained a bi-lstm classifier on the NLPCC dataset and then ran it on millions of Weibo social network chats. By doing this, they got a noisy but annotated dataset that they could use for the task.
+
+Their model is an GRU encoder-decoder system with attention. To incorporate emotion, they keep emotion embeddings that they pass through to the decoder with the encoder outputs and the encoder attention.
+
 
