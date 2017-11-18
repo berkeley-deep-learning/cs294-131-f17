@@ -350,3 +350,36 @@ Black box setting: An algorithm resembling data augmentation is used to train mo
 Attacks were highly effective on CIFAR10, Labeled Faces in the Wild, FaceScrub, 20 Newsgroups, and IMDB datasets, and with model architectures including CNNs and Residual Networks; white box attack on a text classifier can leak 70% of a training corpus without loss of accuracy, and black box attack on a classifier from FaceScrub data allows full recovery of 17 images through leakage of 1 bit per query. 
 The findings are of interest to non-experts in ML who rely on MLaaS platforms to model sensitive data, as well as to researchers at the intersection of security and deep learning. While countermeasures (examining the distribution of parameters; adding noise to low bits of parameters) are effective against specific attacks, the work exposes a fundamental security hazard in the MLaaS paradigm; users with sensitive data should avoid any platform providing a training algorithm not thoroughly understood and examined by the user. Questions of how to define and test the requirement that a model stores only the information required for the task at hand, rather than encoding extraneous information, remain open.
 
+### Comparison of Batch Normalization and Weight Normalization Algorithms for the Large Scale Image Classification
+**Authors**:  Igor Gitman, Boris Ginsburg
+**Arxiv Link**:  https://arxiv.org/abs/1709.08145
+**Published on Arxiv**: September 24, 2017
+
+**Executive Summary**: Batch normalization (BN) and weight normalization (WN) are two effective approaches to normalize the propagation of deep neural networks. BN is reveal to take a significant portion of computation time in this paper. With the launch of the next generation of GPUs, BN will be even less efficient compared to the optimization on convolutions. Although the BN is becoming a standard for very deep network, author try to find an alternate of BN with WN methods which are more efficient. Surprisingly, the  normalization ability of BN cannot be replaced for very deep networks in the large dataset like ImageNet. The training loss and accuracy curve of WN is slightly better than BN but the test accuracy of using BN is much higher.
+
+**Notable Details**: Batch normalization takes 24% computation time while convolution takes 60% with a ResNet model in Pascal GPU. In the next generation of Volta GPU, convolution will be optimized while BN are not able to be optimized.
+
+Three state of the art weight normalization methods are tested, namely the vanilla weight normalization, Normalization Propagation and Normalization with ReLU. The idea is to match the norm between the input and output of a layer. It is reveal that this idea may be violated during training.
+
+Comparison are conducted on both small and large datasets. The smaller CIFAR-10 dataset is tested with a shallow network structure. Other hyperparameters are tuned for each BN and WN method so that they reach the ‘maximum’ performance. They all achieve 100% training accuracy with similar speeds on the smaller CIFAR-10 dataset. The state of the art WN technic bypass BN by 1-2% on the CIFAR-10.
+
+The comparison on the larger ImageNet dataset shows the opposite. The ResNet-50 is used for training. Although the training accuracy is similar between two methods, the BN has 6% higher accuracy on the test set. Even adding dropout layer and increasing the weight decay does not help the overfitting problem in BN. The assumption of the orthogonality of weights is observed to be violated in the very deep network. The norm of outputs stays similar for the first few epochs. It blows up in the last layer and vanishes in the first layer of ResNet-50. The small fraction of change in the norm is exponentially magnified through the training process.
+
+The surprising effect makes the attempt fail to replace the inefficient BN method. The WN are limited to shallow network and small datasets for classification. The call for an efficient substitute of BN still remains. 
+
+### Using Simulation and Domain Adaptation to Improve Efficiency of Deep Robotic Grasping
+
+**Authors**:  Konstantinos Bousmalis, Alex Irpan, Paul Wohlhart, Yunfei Bai, Matthew Kelcey, Mrinal Kalakrishnan, Laura Downs, Julian Ibarz, Peter Pastor, Kurt Konolige, Sergey Levine, Vincent Vanhoucke
+
+**Arxiv Link**:  https://arxiv.org/pdf/1709.07857.pdf
+
+**Published on Arxiv**: 22 Sep 2017
+
+**Executive Summary**: This paper proposes a method for reducing the number of real-world trials needed to acquire vision-based robotic grasping skills by combining real-world data with large amounts of simulated data using domain adaptation techniques. Using the proposed method the amount of real-world training data can be reduced by a factor of 50. The method jointly applies pixel-level and feature-level domain adaptation. First simulated images of the robot arm performing grasp trials are fed into a generator transforming them into realistic looking images. These in turn are fed into a grasp prediction network which is used to plan grasps with a real robot. An additional discriminator loss is added to the optimization enforcing high-level features of the grasp prediction network to be invariant among the two domains.
+
+**Notable Details**: A crucial requirement for the proposed GraspGAN architecture is that the domain-adapted images may not change semantics and physical properties of the scene. (The objects and the robot must be drawn at the exact same locations as in the source image to avoid errors in the grasp prediction). This is ensured by training the generator to output semantic segmentation masks of the scene in addition to the domain-adapted image (ground-truth for semantic segmentation is available through the simulator).  
+
+In addition to the adverserial feature-level domain adaptation (using domain adverserial neural networks DANN) a feature matching loss between the activations of the last convolutional layer of the grasp prediction network is used since it provides more gradient information than the binary labels.
+A variant of batch normalization is introduced accounting for the fact that batch statistics differ significantly among simulated and real-world data. 
+The domain adaptation techniques are compared with scene randomization (changing camera pose, bin location, backgrounds and dynamical properties of the simulated objects) and it is shown that the proposed domain adaptation scheme significantly outperform naiive randomizatoin approaches.
+
