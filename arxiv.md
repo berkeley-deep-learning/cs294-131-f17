@@ -299,7 +299,7 @@ While averaging over several runs and publishing the implementation with the pap
 
 **Suitable Readers**: Those having basic familiarity with deep RL and a desire to understand how specific design choices affect experimental results.
 
-## Arxiv Summaries 10/02
+## Arxiv Summaries Week 10/02
 
 ### Image similarity using Deep CNN and Curriculum Learning
 
@@ -383,7 +383,7 @@ In addition to the adverserial feature-level domain adaptation (using domain adv
 A variant of batch normalization is introduced accounting for the fact that batch statistics differ significantly among simulated and real-world data. 
 The domain adaptation techniques are compared with scene randomization (changing camera pose, bin location, backgrounds and dynamical properties of the simulated objects) and it is shown that the proposed domain adaptation scheme significantly outperform naiive randomizatoin approaches.
 
-## Arxiv Summaries 10/09
+## Arxiv Summaries Week 10/09
 
 ### Efficient K-Shot Learning with Regularized Deep Networks
 
@@ -533,6 +533,78 @@ To determine the optimal number of groups per layer in the network, an RL agent 
 **Suitable Readers**: Those interested in k-shot learning and a unique method of regularization.
 
 ### Natural-Gradient Stochastic Variational Inference for Non-Conjugate Structured Variational Autoencoder
+
+**Authors**: Wu Lin,  Mohammad Emtiyaz Khan, Nicolas Hubacher, Didrik Nielsen 
+
+**Arxiv Link**: https://arxiv.org/pdf/1603.06277.pdf
+
+**Arxiv Published Date**: 7 Jul 2017
+
+**Executive Summary**: This paper proposed a new method for amortized inference in graphical models that contain deep generative models. The method generalizes existing approaches to a larger class of models where the graphical model can contain non-conjugate components. Their main contribution was the proposal of structured recognition models that preserve the correlations between all local variables. For this general class of models, they derived a scalable inference method that employs natural-gradient updates and can be implemented by reusing existing software for graphical models and deep models.
+
+**Notable Details**:  In this paper, they proposed a method that generalizes the method of previous work to a larger class of models where the graphical model can contain non-conjugate components. Their main contribution is the proposal of structured recognition models that preserve the correlations between all local variables. For this general class of model, they also derived a scalable inference method that employs natural-gradient updates and can be implemented by reusing existing software for graphical models and deep models.
+
+**Suitable Readers**: Those who want to know further optimization of variational inference beyond the reading material.
+
+## Arxiv Summaries Week 10/23
+
+### Fishing for Clickbaits in Social Images and Texts with Linguistically-Infused Neural Network Models
+
+**Authors**: Maria Glenski, Ellyn Ayton, Dustin Arendt, Svitlana Volkova
+
+**Arxiv Link**: https://arxiv.org/abs/1710.06390
+
+**Arxiv Published Date**: 17 Oct 2017
+
+**Executive Summary**: Glenski et al. describes two methods in analyzing the amount of clickbait in link-based tweets on Twitter. This work was submitted for the Clickbait Challenge 2017. This work uses a CNN approach as well as a LSTM approach, both of which use the tweet and information at the link destination as features. Of the two, the LSTM performed marginally worse(within 0.01 MSE), but was more computationally preferred for the challenge. Besides text based input features, pictures from the tweet and the linked page were also used as features. This work borrowed from the Faster R-CNN architecture, but also used Inception Resnet for feature extraction. They found certain types of objects in the image lead to a preference in classification as clickbait or not. Images containing food and dishes were more likely to be clickbait, while vehicles in the image would decrease the clickbait score. In the end, the result was 5th out of 13 in the competition.
+
+**Notable Details**: While using the CNN architecture would likely have yielded better end results than the LSTM, the restriction of the competition led to the compromise of slightly lower score for better computation performance. The use of object recognition in the images allows there to be a somewhat human interpretable conclusion on the decision making process of the model. The resulting observations on certain objects affecting the clickbait score is possibly due to data selection and the nature of labelling certain articles and tweets as clickbait or not.
+
+**Suitable Readers**: Those who are interested in Language Analysis, Social Media, Image Recognition.
+
+### Map-based Multi-Policy Reinforcement Learning: Enhancing Adaptability of Robots by Deep Reinforcement Learning
+
+**Arxiv Link**: https://arxiv.org/pdf/1710.06117.pdf
+
+**Authors**: Ayaka Kume, Eiichi Matsumoto, Kuniyuki Takahashi, Wilson Ko and Jethro Tan
+
+**Published on Arxiv**: Oct 17
+
+**Summary**: A desirable quality in robots is having the ability of adapt to new situations without having to redo costly training.  New situations could be injuries in the robot or environmental obstacles.  Instead of using only one policy to deal with all situations, this paper details MMPRL, which searches and stores multiple policies.  The robots have no prior knowledge of what situations could arise.  Policies stored in the map are organized based on user-designed behavioral descriptors.  Bayesian optimization is used to select the best policy during test-time.
+
+**Notable Details**: The behavioral descriptors by which the stored policies are organized are human-designed and are specific to each task and robot model.  Also, the authors chose not to have the robot detect when adaptation is appropriate, and simply have the robot begin adapting at the start of test time.
+
+**Suitable readers**: Those interested in robustness and adaptation in reinforcement learning.
+
+### Recent Advances in Zero-shot Recognition
+
+**Authors**: Yanwei Fu, Tao Xiang, Yu-Gang Jiang, Xiangyang Xue, Leonid Sigal, and Shaogang Gong
+
+**Arxiv Link**: https://arxiv.org/abs/1710.04837
+
+**Arxiv Publish Date**: Fri, 13 Oct 2017
+
+**Executive Summary**: Fu et al. is a literature summary and review on the topic of zero-shot learning, training a recognition model for a new class without any training data of this class. A similar concept, few-shot learning, or learning with only a few labels of an unseen class, is also explored. To achieve zero-shot learning, we draw inspiration from the fact that human can learn novel concepts with few labeled data via powerful semantic featurization of these new concepts. In machine learning, this can be modeled through semantic attributes. The paper gives examples of four popular types of such semantic attributes. After this, we can train models that convert data points into an embedding space in order to correspond seen and unseen classes based on their low-level features. The paper lists a few options for this embedding model as well. With embedding model translating data into embedding space, recognition models can then be trained in this embedding space. Finally, the paper lists some popular datasets for zero-shot learning and recognition, as well as future research paths for this concept.
+
+**Notable Details**: Today’s machine learning community is making attempts to steer away from “big data” craze. Granted, supervised learning performs well with massive amounts of training data, however, it is more economical and realistic for us to develop methods that efficiently utilizes labeled data. This is a statistic question as well as a machine learning question. This paper is a good starting point for researchers to get started with the concept of few-shot learning, especially for fields such as robotics where labeled data can be expensive or time consuming to obtain.
+
+**Suitable Readers**: People who are interested in image or video object recognition, and semantic understanding in natural language processing. Researchers in fields where collecting labeled data is expensive. Statisticians interested in latent space modeling of visual or natural language data.
+
+### Unsupervised Object Discovery and Segmentation of RGBD-Images
+
+**Authors**: Johan Ekekrantz∗ , Nils Bore∗ , Rares Ambrus∗ , John Folkesson∗ and Patric Jensfelt∗
+
+**Arxiv link**: https://arxiv.org/pdf/1710.06929.pdf 
+
+**Arxiv date**: Fri, 17 Oct 2017
+
+**Executive Summary**: Sensor noise is modeled directly from data instead of hand-tuning. Using probabilistic inference, we are able to segment in previously challenging scenarios. The previous most common solution to object detection is the supporting plane assumption, which says that most objects are found on flat supporting surfaces. The new method presented in this paper is using the Statistical Inlier Estimation (SIE) algorithm which is modified and applied to change detection and probabilistic image edge detection. The algorithm is used to model noise distribution and perform probabilistic occlusion detection between RGBD pairs, reducing time spent on hand-tuning parameters. MLE is used to estimate which regions change in the RGBD pairs. A classic supervised learning detector is used to detect people, and the moving segments detector detects moving segments. Each complements the other, and the result is we can model the stationary rigid body objects in the environment.
+
+**Notable Details**: Separating the dynamic and static objects in an environment is an important problem in computer vision and robotics. A typical use case is a surveillance camera with automatic detection. Otherwise, this system can also help improve the quality of SLAM systems.
+
+**Suitable Readers**: Roboticists who are interested in object discovery and attention, such as for an autonomous discovery system.
+
+### Natural-Gradient Stochastic Variational Inference for Non-Conjugate      Structured Variational Autoencoder
 
 **Authors**: Wu Lin,  Mohammad Emtiyaz Khan, Nicolas Hubacher, Didrik Nielsen 
 
