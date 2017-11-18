@@ -683,3 +683,71 @@ The Structure of the target DNN consists of 5 conv layers followed by 0.3 dropou
 **Notable Details**: Expanding on the model, we note that in practice autoencoders are trained on a loss function which is the reconstruction loss of the original sample data. However, deep kernelized autoencoders work by combining two loss functions with weight hyperparameter: the original autoencoder loss function, as well as the Frobenius Norm of the inner product matrix of latent samples with the kernel matrix, given as a prior. As noted, the kernel matrix is a Time Series Cluster Kernel, which is formed via joining the clustering results of many Gaussian Mixture Models (GMMs). TSCK’s have been shown to exploit missing patterns to compute similarity, rather than impute missing values.
 
 The data that this custom dkAE was tested on were blood samples collected from patients within 20 days after gastrointestinal surgery. The data had 10 features, with a label of whether the patient had developed surgical infections. The total dataset consisted of 883 samples, 232 with infections. Three metrics were used to compare seven models: MSE of the reconstruction, F1 score of kNN prediction (k=3), and AUC of the kNN prediction. The seven models were as follows:  the missing data was imputed in three ways, and run on a regular autoencoder, and the custom dkAE (Six models). The data was imputed as follows: zero for missing data, mean for missing data, carry-forward for missing data. The final model was created using the original input space with TCK similarity. When compared across all 7 models, dkAE with zero imputed data performs the best by far when compared on mean AUC of 81.3% and F1 score of .748. As a whole, the custom dkAEs outperform regular autoencoders with higher F1 scores and AUC, and lower mean squared reconstruction loss, which is surprising as regular autoencoders loss functions are built only on reconstruction error. As a whole, by using a TCK kernel matrix in the dkAE, data is better embedded in lower dimensions, and classification results improve as a whole. 
+
+## Arxiv Summaries Week 11/13
+
+###Non-Autoregressive Neural Machine Translation
+
+**Authors**: Jiatao Gu, James Bradbury, Caiming Xiong, Victor O.K. Li, Richard Socher
+
+**Arxiv Link**: https://arxiv.org/pdf/1711.02281.pdf
+
+**Published on Arxiv**: November, 7 2017
+
+**Executive Summary**: Current state-of-the-art neural machine translation models are autoregressive in nature. In other words, they condition on previous output to generate next output. This makes the decoding steps impossible to take advantage of parallelism and computationally expensive. The paper introduces a fertility measure to make each decoding step independent. This non-autoregressive approach parallelizes decoding steps while maintaining competitive BLEU scores.
+
+**Notable Details**: The non-autoregressive model initialize decoding process using copied input source of the encoder. In order to learn how long the target sentence will be, the authors suggest copying each encoder input as a decoder input zero or more times, which they term, “fertility.” They used another one-layer neural network with softmax classifier to model this fertility. For decoding process, they used noisy parallel decoding method to draw samples from the fertility space and compute the best translation for each fertility sequence. Also, to address the nondeterminism in the training data by approximating the multimodal target distribution, they trained the non-autoregressive model using output from an autoregressive model. The training loss then seeks to minimize the sum of translation loss and fertility loss.
+
+**Suitable readers**: Those interested in neural machine translation or seeking RNN alternatives for sequential input.  
+
+### Composing Meta-Policies for Autonomous Driving Using Hierarchical Deep Reinforcement Learning
+
+**Authors**: Richard Liaw , Sanjay Krishnan , Animesh Garg , Daniel Crankshaw, Joseph E. Gonzalez, Ken Goldberg
+
+**Link**: https://arxiv.org/pdf/1711.01503.pdf
+
+**Executive Summary**The problem statement of the paper “Composing Meta-Policies for Autonomous Driving Using Hierarchical Deep Reinforcement Learning” is that after a change in the task at hand relearning a policy from scratch using RL takes a long time, so it might be a good idea to use a meta-policy that chooses from a finite set of policies learned for other related tasks. The paper uses the example of a new car with a policy_new and an old car with a policy_old, noting that maybe a medium-aged car would work well with a policy that is a combination of policy_old and policy_new. The paper uses a GRU (Gated Recurrent Units)-RNN to model the meta-policy from a set of other policies. It uses a neural network to account for the shared-state space for different policies and RNN to account for noise due to partial observation. 
+
+**Notable Details** Below are some interesting results:
+* In the partially observed setting, meta policy learning converges in ~50 iterations while traditional RL converges ~500.
+* Meta-policy learning handles noise very well. Traditional RL doesn’t achieve the same performance as meta-policy learning after 4x the training.
+* Meta-policy converges well in terms of finding the subspace of policy which are optimal from a larger space of policies.
+
+Below are some areas of future research it leaves unexplored:
+
+* Meta-policy may not find the optimal policy, since it only finds the best composite policy.
+* Meta-policy doesn’t seem to handle environments where rewards are not sparse as well.
+* Meta-policy may fall short of the best policy initially, thus “falling short” of a lower bound.
+
+### Structured Generative Adversarial Networks
+
+**Authors**: Zhijie Deng, Hao Zhang, Xiaodan Liang, Luona Yang, Shizhen Xu, Jun Zhu, Eric P. Xing
+
+**Link**: https://arxiv.org/pdf/1711.00889.pdf
+
+**Published on arXiv**: Nov 2
+
+**Executive Summary**: In the paper “Structured Generative Adversarial Networks”, the authors tackle the problem of generating conditional distribution given some designated semantics or structures. The authors propose the structured generative adversarial networks (SGANs) to achieve this goal in the semi-supervised setting, where there are only a small amount of training data are labeled.
+
+**Notable Details**: SGAN considers two latent variables: y (the designated structure) and z (Gaussian noise) and the goal is to learn a function x=G(y, z) to approximate the conditional distribution p(x|y). The SGAN framework consists of 4 adversarial games:
+
+* L_{xz} which learns the posterior distribution of z given x,
+* L_{xy} which learns the joint distribution p(x, y) using the labeled data,
+* Collaborative game R_y: use the generated (x, y) pairs as the true pairs, in order to improve controllability, also introduce the network C: x-> y in approximate the posterior 
+* Collaborative game R_y:  enforce any other unstructured information that is not of our interest to be fully captured in z, without being entangled with y
+
+The experimental results show that SGAN is a more controllable generator than the baseline algorithms, and it also establishes start-of-the-art results across multiple datasets when applied for semi-supervised image classification.
+
+### DeepRain: ConvLSTM Network for Precipitation Prediction Using Multichannel Radar Data
+
+**Author**: Seongchan Kim, Seungkyun Hong, Minsu Joh, Sa-kwang Song
+
+**Link**: https://arxiv.org/pdf/1711.02316.pdf
+
+**Published on arXiv**: Nov 7
+
+**Executive Summary** The paper “DeepRain: ConvLSTM Network for Precipitation Prediction Using Multichannel Radar Data” by Kim et. al focuses on the problem of accurate rainfall prediction for multidimensional spatial data. This research area is relevant because rainfall forecasting has a pervasive impact on people’s socioeconomic behaviors. The current state of the art techniques have adapted deep learning and high performance computing techniques on spatiotemporal data (namely CNNs and RNNs) for weather related tasks. However, none of these tasks have optimized for multi-dimensional data input or approach the problem with convolutional cells LSTMs. Kim et. al seek to adopt the ConvLSTMs for three-dimensional and four-channel radar data, stack the ConvLSTM cells for performance enhancement, and confirm the ConvLSTM method is more effective for predicting rainfall than linear regression and the last paper on fully connected LSTMs (FC-LSTM).
+
+The methodology of the ConvLSTM is outlined in section 4 of the paper with four equations for input, forget, and output for multi-dimensional data as an adaptation of the Shi et. al. work in 2015. The W matrix represents the learned weights, x represents the current input data, and c represents the cell state. They implement the ConvLSTM and the FC-LSTM on the data using NVIDIA Dual GPUs and a Tensor Flow framework, using the Adam and Gradient Descent Optimizer. 
+
+Through their experiments (section 5), we see that the two-stacked ConvLSTM outperforms the one-stacked ConvLSTM and the FC-LSTM, reducing RMSE by 23% comparing to linear regression, and 21.8% compared to the FC-LSTM.
