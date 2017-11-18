@@ -284,7 +284,7 @@ DropoutDAgger achieves the safety of behavioral cloning (which is safer than DAg
 
 The transformations improved the final gain in performance by about 51%, measured on the 48 datasets. 
 
-## Deep Reinforcement Learning that Matters
+### Deep Reinforcement Learning that Matters
 
 **Authors**: Peter Henderson, Riashat Islam, Philip Bachman, Joelle Pineau, Doina Precup, David Meger
 
