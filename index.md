@@ -313,7 +313,7 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
           <li><a href="https://arxiv.org/abs/1605.06640">Programming with a Differentiable Forth Interpreter</a> by Matko Bošnjak, Tim Rocktäschel, Jason Naradowsky, Sebastian Riedel</li>
         </ul>
       </td>
-      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#danny-tarlow-differential-interpreters">Differential Interpreters</a></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
