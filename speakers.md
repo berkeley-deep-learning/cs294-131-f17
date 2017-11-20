@@ -143,3 +143,12 @@ from learning neural program representations.
 
 Rishabh Singh is a researcher in the Cognition group at Microsoft Research, Redmond. His research interests span the areas of programming languages, formal methods, and deep learning. His recent work has focused on developing new neural architectures for learning programs. He obtained his PhD in Computer Science from MIT in 2014, where he was a Microsoft Research PhD fellow and was awarded the MIT’s George M. Sprowls Award for Best PhD Dissertation. He obtained his BTech in Computer Science from IIT Kharagpur in 2008, where he was awarded the Institute Silver Medal and Bigyan Sinha Memorial Award.
 
+## Danny Tarlow:  Differentiable Interpreters
+
+### Abstract
+
+ I'll give an overview of synthesizing programs from input-output examples using differentiable interpreters. The main idea of differentiable interpreters is to extend the logic for how a program gets executed so that it is differentiable. Given a differentiable interpreter, we can backpropagate from input-output examples to the program representation and search over program space using gradient descent. I'll focus on our system, TerpreT, which is a framework for defining differentiable interpreters and comparing gradient-based program search to tradition discrete search-based methods. Time permitting, I'll discuss an extension of TerpreT that enables jointly synthesizing programs and learning neural network "subroutines" so that programs can operate on a mix of integer and tensor types.
+ 
+ ### Bio
+ 
+ Danny is a Research Scientist at Google Brain in Montreal. His main research interests are in the application of machine learning to problems involving structured data, with a particular interest in the intersection of machine learning and programming languages. He holds a Ph.D. from the Machine Learning group at the University of Toronto (2013) and previously was a Researcher at Microsoft Research Cambridge UK with a Research Fellowship at Darwin College, University of Cambridge. He was a co-editor of the recent MIT Press book on Perturbations, Optimization, and Statistics (2017). His work has won awards at UAI (Best Student Paper, Runner Up), ICML and NIPS Workshops (Best Paper x 2), and NIPS (Best Paper). 
