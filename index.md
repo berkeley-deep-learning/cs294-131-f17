@@ -303,7 +303,7 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
       <td>11/27</td>
       <td>Danny Tarlow</td>
       <td></td>
-      <td></td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#danny-tarlow-differential-interpreters">Differential Interpreters</a></td>
       <td></td>
     </tr>
     <tr>
