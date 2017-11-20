@@ -307,7 +307,12 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
         <li><a href="http://arxiv.org/abs/1608.04428">TerpreT: A Probabilistic Programming Language for Program Induction</a> by Alex Gaunt, Marc Brockschmidt, Rishabh Singh, Nate Kushman, Pushmeet Kohli, Jonathan Taylor, and Daniel Tarlow</li>
          <li><a href="https://arxiv.org/abs/1611.02109">Differentiable Programs with Neural Libraries</a> by Alex Gaunt, Marc Brockschmidt, Nate Kushman, and Daniel Tarlow.</li>
         </ul></td>
-      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#danny-tarlow-differential-interpreters">Differential Interpreters</a></td>
+      <td><a href="https://berkeley-deep-learning.github.io/cs294-131-f17/speakers.html#danny-tarlow-differential-interpreters">Differential Interpreters</a>
+              Background Reading:
+        <ul>
+          <li><a href="https://arxiv.org/abs/1511.06392">Neural Random-Access Machines</a> by Karol Kurach, Marcin Andrychowicz, Ilya Sutskever</li>
+          <li><a href="https://arxiv.org/abs/1605.06640">Programming with a Differentiable Forth Interpreter</a> by Matko Bošnjak, Tim Rocktäschel, Jason Naradowsky, Sebastian Riedel</li>
+        </ul></td>
       <td></td>
     </tr>
     <tr>
