@@ -319,7 +319,7 @@ A Review</a> by S. Young, M. Gasic, B. Thomson, and J.Williams</li>
     <tr>
       <td>11/27 DATE CHANGED!</td>
       <td>Poster Session</td>
-      <td>3:00-5:00 (tentative)</td>
+      <td>3:00-5:00 SDH Atrium</td>
       <td></td>
       <td></td>
     </tr>
