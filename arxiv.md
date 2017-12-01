@@ -894,9 +894,11 @@ where H (N-by-d) is the matrix of context vectors, W (M-by-d) is the matrix of w
 **Notable Details**: The new approach is based on two important properties:
 1. The decision boundaries should be unchanged
 2. The features extracted by the new network from old domain data should be close to those extracted by the old network from old domain data
+
 The algorithm is as following: reuse the weights of the old network as those of the new network → freeze the weights of the softmax classifier layer to preserve boundaries of the classifier → train the network to minimize a composite loss function 
 The new network trained by new domain data only still performs as well on old domain. The final network works well without knowing which domain the input data come from
 The paper conducts two experiments on image classification:
+
 1. Tiny images (MNIST + CIFAR-10 + SVHN)
 The method was significantly more effective than the traditional fine-tuning method when the old-domain data were partially accessible
 2. Large images (ImageNet)
