@@ -684,9 +684,80 @@ The Structure of the target DNN consists of 5 conv layers followed by 0.3 dropou
 
 The data that this custom dkAE was tested on were blood samples collected from patients within 20 days after gastrointestinal surgery. The data had 10 features, with a label of whether the patient had developed surgical infections. The total dataset consisted of 883 samples, 232 with infections. Three metrics were used to compare seven models: MSE of the reconstruction, F1 score of kNN prediction (k=3), and AUC of the kNN prediction. The seven models were as follows:  the missing data was imputed in three ways, and run on a regular autoencoder, and the custom dkAE (Six models). The data was imputed as follows: zero for missing data, mean for missing data, carry-forward for missing data. The final model was created using the original input space with TCK similarity. When compared across all 7 models, dkAE with zero imputed data performs the best by far when compared on mean AUC of 81.3% and F1 score of .748. As a whole, the custom dkAEs outperform regular autoencoders with higher F1 scores and AUC, and lower mean squared reconstruction loss, which is surprising as regular autoencoders loss functions are built only on reconstruction error. As a whole, by using a TCK kernel matrix in the dkAE, data is better embedded in lower dimensions, and classification results improve as a whole. 
 
+## Arxiv Summaries Week 11/06
+
+### Transfer Learning to Learn with Multitask Neural Model Search
+
+**Authors**: Catherine Wong, Andrea Gesmundo
+
+**Arxiv Link**: https://arxiv.org/abs/1710.10776
+
+**Published on Arxiv**: October, 30 2017
+
+**Executive Summary**: Neural Architecture Search (NAS) utilizes a controller RNN and reinforcement learning in order to produce a child network with trained hyperparameters. This technique has proven to be very effective, producing novel architectures that in some cases surpass the performance of human designed models, however the computational cost in constructing these networks is immense. One conceivable way to reduce the computation time of NAS is to leverage transfer learning for similar tasks. Wong and Gesmundo propose Multitask Neural Model Search (MNMS), a formulation aimed at effectively applying transfer learning to NAS. MNMS relies on three components: learned task representation and task conditioning, off-policy training using multitask replay, per-task baseline and reward distribution normalization. Wong and Gesmundo apply MNMS to 2 pairs of NLP tasks and demonstrate that training the network on the first pair of tasks followed by training on the second pair of tasks indeed yields faster training and better final accuracies than training on the second task from a randomly initialized network.
+
+**Notable Details**:  Previous works have attempted to leverage transfer learning to NAS; however, none have produced a model that, without some level of human design intervention, can demonstrate successful transfer learning. MNMS attempts to produce a formulation that can allow for effective transfer learning in the domain of NAS. This method relies on three components:
+Learned task representation and task conditioning
+Off-policy training using multitask replay
+Per-task baseline and reward distributions normalization
+In learned task representation and task conditioning, tasks are randomly mapped to an embedding vector. When training on N tasks, a random task is sampled, the embedding vector for this task is then concatenated with every input fed to the controller RNN; this conditions the output of the RNN on the task. It was found that on-policy training reduced the ability for the controller to learn a differentiated model for each task. To remedy this, off-policy PPO is used to train the controller in which an actor controller generates sampled models and a critic controller trains on a replay bank of sampled models and rewards. Since each task has it’s own reward metrics they must be normalized so the amplitudes of each tasks gradients are similar. To do so, the gradients are scaled by advantages instead of rewards, since the advantage is zero meaned. A baseline (b(t)) for each task is set to an exponential moving average of rewards for each tasks. This advantage is then divided by this baseline yielding the normalized advantage (A’) which is used to scale the gradients. The full formulation is thus A’(a, t) = (R(a, t) - b(t))/b(t). Wong and Gesmundo applied MNMS to 2 pairs of NLP tasks where each pair contained tasks similar to a corresponding task in the other pair. The first pair was trained from a randomly initialized network and the second was trained with transfer learning. They then trained the second pair of tasks on a randomly initialized network and compared the accuracy of training with and without transfer learning. They had the controller find hyperparameters over a discrete set of values. The first two tasks were binary sentiment classification of the Stanford Sentiment Treebank (SST) dataset and binary Spanish language identification on a dataset consisting of each of the 5,000 highest frequency Wikipedia tokens in English, Spanish, German, and Japanese. The example label is a binary label denoting whether the token is SPanish or not. The next pair of tasks were binary sentiment classification on the IMBD Large Movie Review dataset and binary sentiment classification on the CorpusCine dataset, which consists of 3,878 Spanish movie reviews. These pairs of tasks were selected due to their potential to utilize transfer learning. The network trained with transfer learning both trained faster, and converged to a higher accuracy value that trained without transfer learning demonstrating that MNMS successfully enables transfer learning in the domain of NAS.
+
+### PROGRESSIVE GROWING OF GANS FOR IMPROVED QUALITY, STABILITY, AND VARIATION
+
+**Authors**: T. Karras, T. Aila, S. Laine, J. Lehtinen
+
+**Arxiv Link**: https://arxiv.org/pdf/1710.10196.pdf
+
+**Publised on Arxiv**: November 3, 2017 
+
+**Executive Summary**: Current pitfalls of the widely popular GANs include that they are often restricted to low-resolution images, do not produce a lot of variation in the samples, and training is unstable. Generating higher resolution images is difficult for a couple reasons. First, at higher resolution the generated samples are easier to tell apart from the original samples. Second, due to memory constraints, training is restricted to small mini-batches, which compromises stability. This paper suggests a novel approach: start with a simpler model, producing lower resolution images. Then, as training progresses, add new layers to capture more and more details. This allows the model to first learn overall structure, and then focus on finer details, which speeds up training, and stabilizes at higher resolution. Fade these new layers in smoothly to avoid sudden shocks to the already trained low res images.
+
+**Notable Details**:  The model “fades” from lower resolution to higher resolution images by using a weighted average of the next level and the previous one, where the weights are α and 1-α respectively. This weight α grows linearly from 0 to 1. The results of this growing GAN model improved best published inception score on CIFAR10. Furthermore, they created a high quality version of the CELEBA dataset, with output resolution up to 1024 x 1024, something that hasn’t been feasible before. The lab intends to publish this dataset. I think anyone involved in vision machine learning, particularly in generation, and anyone who is excited about GANs should read this paper.
+
+### DYNAMIC ROUTING BETWEEN CAPSULES
+
+**Authors** S. Sabour, N. Frosst, G. E. Hinton
+
+**Arxiv Link**:  https://arxiv.org/pdf/1710.09829.pdf
+
+**Published on Arxiv**: October 26, 2017
+
+**Executive Summary**: Traditional CNNs have struggled at tasks where there may be variations in the data such as rotations or translations. Furthermore, they tend to take a significant amount of data in order to generalize well. To combat some of these issues, the idea of capsules was proposed. Capsules represent small groups of neurons whose goal is to detect the likelihood of a feature as well as different parameters of the same feature. Capsules output a vector which represent the existence of a feature via its length and the properties of the feature via its orientation. These capsules are then structured in a parse tree such that each node corresponds to an active capsule. Active capsules in lower layers will choose a capsule in the layer above to be its parent in the tree. These active capsules make predictions about the instantiation parameters of higher level capsules. If sufficient predictions align, the higher level capsule becomes active. Through the use of a routing algorithm, weights (called coupling coefficients) are calculated which determine how the capsules will receive information from previous capsules. These coupling coefficients are then adjusted according to the level of agreement in a prediction between capsules through the use of routing. 
+
+**Notable Details**: Using a simple 3 layer network with capsules provides similar results to deep CNNs on many tasks. Furthermore, it seems that capsule networks perform well on tasks which traditional CNNs may not have performed as well on, such as identifying overlapping digits as seen through increased performance on MNIST. Capsules networks also did well on CIFAR-10, but it seems that capsule networks in their current state are not great when there is a lot of background variation (MNIST has constant black backgrounds whereas CIFAR-10 does not). Overall, capsule networks are able to generalize well and withstand variations in the data with less training data.
+
+**Suitable Readers**: Anyone with familiarity with CNNs and interested in an exciting new architecture structure for machine learning tasks.
+
+### SYNTHESIZING ROBUST ADVERSARIAL EXAMPLES
+
+**Authors**: Anish Athalye, Logan Engstrom, Andrew Ilyas, Kevin Kwok
+
+**Arxiv Link**:  https://arxiv.org/pdf/1707.07397.pdf
+
+**Published on Arxiv**: October 30, 2017
+
+**Executive Summary**: Adversarial examples can currently be created relatively easily by perturbing an image by a particular amount specific to the classifier. However, prior work has shown that the adversarial example generated using this technique lose their adversarial nature once transformed or altered in any way, which often happens in the real world. The authors introduce a new approach, the Expectation Over Transformation (EOT) algorithm, that is able to produce adversarial examples that remain adversarial after being transformed under any transformation T, facilitating the creation of 3D objects that are misclassified from all angles. This implies that these methods are, in fact, a concrete threat to real-world systems. 
+
+**Notable Details**: The authors’ new approach, Expectation Over Transformation (EOT), is different because rather than optimizing the log-likelihood of a single example, EOT uses a chosen distribution T of transformation functions t taking an input x generated by the adversary to the “true” input t(x) perceived by the classifier.  In practice, we can have T model random rotation, translation, or addition of noise.
+
+### Interpretation of Neural Networks is Fragile
+
+**Authors**: Amirata Ghorbani, Abubakar Abid, James Y. Zou
+
+**Arxiv Link**: https://arxiv.org/abs/1710.10547
+
+**Published on Arxiv**: October 29, 2017
+
+**Executive Summary**: Researchers have proposed various methods for interpreting convolutional neural networks (CNN), but have not studied whether these methods are stable with respect to trivial perturbations. In this paper, the authors show that several widely-used interpretation methods are unstable with respect to even random perturbations. Moreover, they develop an approach for imperceptibly modifying a picture without altering the prediction, but drastically altering the interpretation. More succinctly, this paper shows that adversarial examples can be constructed for interpretation methods, in addition to the existing results on various supervised learning tasks.
+
+**Notable Details**: For their introduced perturbation techniques, they perform experiments on Imagenet and CIFAR-10. The evaluation criteria are the spearman correlation between the original interpretation scores and the interpretation scores on the perturbed image, and the intersection of the top-k features chosen before and after the perturbation. With relatively small perturbations to the image, they are able to almost completely change the interpretation of 512 correctly classified Imagenet images. They also applied their approach to Koh and Liang’s recent ICML paper on influence functions, yielding similar results
+
+**Suitable readers**: This work is of interest to researchers in two fields. First, those interested in adversarial examples now have an interesting new use case. Second, researchers working in interpretability have a new challenge to deal with. 
+
+
 ## Arxiv Summaries Week 11/13
 
-###Non-Autoregressive Neural Machine Translation
+### Non-Autoregressive Neural Machine Translation
 
 **Authors**: Jiatao Gu, James Bradbury, Caiming Xiong, Victor O.K. Li, Richard Socher
 
@@ -751,3 +822,83 @@ The experimental results show that SGAN is a more controllable generator than th
 The methodology of the ConvLSTM is outlined in section 4 of the paper with four equations for input, forget, and output for multi-dimensional data as an adaptation of the Shi et. al. work in 2015. The W matrix represents the learned weights, x represents the current input data, and c represents the cell state. They implement the ConvLSTM and the FC-LSTM on the data using NVIDIA Dual GPUs and a Tensor Flow framework, using the Adam and Gradient Descent Optimizer. 
 
 Through their experiments (section 5), we see that the two-stacked ConvLSTM outperforms the one-stacked ConvLSTM and the FC-LSTM, reducing RMSE by 23% comparing to linear regression, and 21.8% compared to the FC-LSTM.
+
+## Arxiv Summaries Week 11/20
+
+### Breaking the Softmax Bottleneck: A High-Rank Language Model (Allen Guo)
+**Authors**: Zhilin Yang, Zihang Dai, Ruslan Salakhutdinov, William W. Cohen
+
+**Arxiv Link**:  https://arxiv.org/pdf/1711.03953.pdf 
+
+**Published on Arxiv**: Nov. 13, 2017
+
+**Executive Summary**: In this paper, Yang et al. show that the standard approach to language modeling is essentially equivalent to computing a matrix factorization of the true data distribution. The authors then argue that the true data distribution in the real world is high-rank -- which means the standard approach may not be expressive enough to factorize it. The paper then proposes a new model called Mixture of Softmaxes (MoS) with significantly improved expressiveness: it is capable of factorizing an arbitrary-rank approximation of the true data distribution. Experiments show SOTA results for MoS on Penn Treebank and WikiText-2.
+
+**Notable Details**: Language modeling involves predicting the next word in a sequence given its context. The current standard SOTA approach to language modeling involves 1) encoding the context using an RNN, 2) computing the dot product of the context with word embeddings to find the logits, and 3) feeding the logits into a softmax function. The result is a probability distribution over the next word. This is essentially equivalent to the matrix factorization
+HW^T = A’
+where H (N-by-d) is the matrix of context vectors, W (M-by-d) is the matrix of word embeddings, and A’ (N-by-M) is a matrix where Softmax(A’) is the true data distribution. Since it is the job of the model to learn H and W, the theoretical expressiveness of the model is limited by d, the dimensionality of the space of context vectors; if d is less than the rank of A’, the model cannot fully capture A’. Yang et al. argue that A’ is indeed high-rank; this argument is based on qualitative judgements about human language, as well as empirical results. The MoS model they propose is essentially the weighted average of K individual softmax models. This model is nonlinear, and is thus not affected by the expressiveness limitations that regular softmax models face.
+
+
+
+### Hindsight policy gradients (Jeffrey O Zhang)
+**Authors**: Paulo Rauber, Filipe Mutz, Juergen Schmidhuber
+
+**Arxiv Link**:  https://arxiv.org/pdf/1711.06006.pdf
+
+**Published on Arxiv**: Nov. 16, 2017
+
+**Executive Summary**: Goal-conditioned policies for agents can be useful for developing hierarchical models or for generalization to unseen goals. However, incorporating goal in the problem can be different. This paper introduces a variant of policy gradient that let us use trajectories from another goal to improve our policy. The experiments show that this variant of policy gradient has better sample efficiency.
+
+**Notable Details**: They start with the regular policy gradient equations and use importance sampling to come up with a goal-conditioned version of policy gradient. They introduce variants to the hindsight policy gradient formula by replacing the expectation on goals with the an assumption that the goal distribution is uniform for some experiments. The goal space is defined to be any goal such that r(s, g) != 0 for some state. Environment setup is simple and the network used is not very large (single hidden layer).
+
+
+
+### Simple and Efficient Architecture Search for Convolutional Neural Networks (Melih Elibol)
+**Authors**:  Thomas Elsken, Jan-Hendrik Metzen, Frank Hutter
+
+**Arxiv Link**: https://arxiv.org/pdf/1711.04528.pdf
+
+**Published on Arxiv**: November 13, 2017
+
+**Executive Summary**: The paper presents a new way to perform architecture search for convolutional neural networks. They call their method Neural Architecture Search by Hillclimbing (NASH). This carries out the usual architecture iterative search procedure: At each iteration, select architectures to try based on previous results, then try those architectures. They select architectures by applying a set of alternative network morphisms to the current network, then perform short optimization runs of cosine annealing on the resulting child networks. It is worth noting that the weights from the parent network are inherited by the child network, thus decreasing training time. The procedure is repeated on the child architecture that performed best.
+
+**Notable Details**: Most notably, this optimization algorithm seems like an evolutionary algorithm in disguise. At each step, a single candidate is mutated. The performance metric can be thought of as the fitness function used to evaluate “offspring.” One good question they address is whether the inheritance of weights leads to poor optima. They compared results of the networks with inherited weights to networks trained from scratch, and there appears to be no significant difference in error.
+
+
+### Open-World Knowledge Graph Completion
+
+**Authors**: Baoxu Shi, Tim Weninger, @ UND
+
+**Arxiv Link**: https://arxiv.org/pdf/1711.03438.pdf 
+
+**Published on Arxiv**: Nov. 9, 2017
+
+**Executive Summary**: A knowledge graph is a triple <h, r, t> that signifies the relationship between two objects or entities h, t with relationship r. It follows that a popular task for KG’s is Knowledge Graph Completion where r is estimated. The authors of this paper propose a new method of open world (where entities can be unobserved - such as h, t) knowledge graph completion where a fully convolutional neural network is trained to to perform the following three steps: 1. Identify important parts of the text, 2. Embed the important parts 3. Entity resolution between similar object embeddings in order to estimate correct target entities. The purpose of this model is to try to learn implicit relationships between entities that may not be given or known. The results suggest this model is able to successfully infer target entities.
+
+**Notable Details**: Typically, it is very difficult to model text in a knowledge graph that does not have an explicitly given structure with a neural network (such as having excess words that are not fundamentally important to a sentence structure like the, a, etc.). Although the usage of CNNs on language is not new, the way the model identifies relevant portions of text is particularly interesting. The model defines this method as Maximal World Relationship Weights where entities that are relevant to each other such as the entity Michelle Obama and Harvard University would have high weights and Michelle Obama and Apple would not. 
+
+**Suitable Readers**: Those that are interested in graphical representations of language tasks. 
+
+
+
+### Less-forgetful Learning for Domain Expansion in Deep Neural Networks (Yujia Luo)
+
+**Authors**:  Heechul Jung, Jeongwoo Ju, Minju Jung, Junmo Kim
+
+**Arxiv Link**:  https://arxiv.org/pdf/1711.05959.pdf	
+
+**Published on Arxiv**: Nov, 16 2017
+
+**Executive Summary**: The paper proposes a less-forgetful learning method for deep neural network to expand domains. The approach works well with both old and new domains without the need to discriminate between the two.
+
+**Notable Details**: The new approach is based on two important properties:
+1. The decision boundaries should be unchanged
+2. The features extracted by the new network from old domain data should be close to those extracted by the old network from old domain data
+The algorithm is as following: reuse the weights of the old network as those of the new network → freeze the weights of the softmax classifier layer to preserve boundaries of the classifier → train the network to minimize a composite loss function 
+The new network trained by new domain data only still performs as well on old domain. The final network works well without knowing which domain the input data come from
+The paper conducts two experiments on image classification:
+1. Tiny images (MNIST + CIFAR-10 + SVHN)
+The method was significantly more effective than the traditional fine-tuning method when the old-domain data were partially accessible
+2. Large images (ImageNet)
+The method improved the recognition rate by about 1.8% compared to the existing fine-tuning method
+
